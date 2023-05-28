@@ -1,0 +1,830 @@
+doctype html
+html(lang="en", dir="ltr")
+    head
+        include components/head.pug
+    body
+        include components/navbar.pug
+        section(class="container-fluid  bg_primary position-relative")
+            div(class="row ")
+                div(class="col-xxl-6 col p-0 px-lg-5")
+                    form(class="row domain-search")
+                        h1(class="mb-lg-5 mb-3") Find your Perfect Property.
+                        div(class="container")
+                            div(class="form-check form-check-inline form-check-square")
+                                input#option8(class="btn-check rounded-0", type="radio", name="options", autocomplete="off", checked)
+                                label(class="btn btn-secondary rounded-0 mb-2", for="option8") RESIDENTIAL
+                                input#option5(class="btn-check rounded-0", type="radio", name="options", autocomplete="off")
+                                label(class="btn btn-secondary rounded-0 mb-2", for="option5") COMMERCIAL
+                            div(class="input-group")
+                                input(class="form-control rounded-0", type="search")
+                                span(class="input-group-addon")
+                                    input(class="btn btn-primary", type="submit", value="Search")
+                            div(class="row my-5")
+                                div(class="col-6")
+                                    div#check1(class="activecheckbox form-check-inline")
+                                        input#option11(class="btn-check rounded-0", type="radio", name="options2", autocomplete="off", checked)
+                                        label(class="btn-secondary rounded-0 scheck", for="option11")
+                                        label(class="m-2", for="option11") BUY
+                                    div#check2(class="form-check-inline")
+                                        input#option12(class="btn-check rounded-0", type="radio", name="options2", autocomplete="off")
+                                        label(class="btn-secondary rounded-0 scheck", for="option12")
+                                        label(class="m-2", for="option12") RENT
+                                div(class="col-6 d-flex justify-content-end align-items-center")
+                                    a(href="search.html", style="color: #87bba2") ADVANCED SEARCH
+                            hr
+                            div(class="row")
+                                div(class="form-group col")
+                                    label(class="mb-2 text_secondary", for="exampleSelect") PRICE 
+                                        small EGP
+                                    div
+                                        div(class="select-wrapper mb-2")
+                                            select#exampleSelect(class="form-control")
+                                                option(value="", disabled, selected) FROM
+                                                option(value="option1") Option 1
+                                                option(value="option2") Option 2
+                                                option(value="option3") Option 3
+                                            i(class=" bi bi-caret-down-fill")
+                                        div(class="select-wrapper ")
+                                            label(for="exampleSelect2", class="sr-only") option
+                                            select#exampleSelect2(class="form-control")
+                                                option(value="", disabled, selected) To 
+                                                option(value="option1") Option 1
+                                                option(value="option2") Option 2
+                                                option(value="option3") Option 3
+                                            i(class=" bi bi-caret-down-fill")
+                                div(class="form-group col")
+                                    label(class="mb-2 text_secondary", for="Area") AREA 
+                                        small M 
+                                            sup 2
+                                    div
+                                        div(class="select-wrapper mb-2")
+                                            select#Area(class="form-control")
+                                                option(value="", disabled, selected) FROM
+                                                option(value="option1") Option 1
+                                                option(value="option2") Option 2
+                                                option(value="option3") Option 3
+                                            i(class=" bi bi-caret-down-fill")
+                                        div(class="select-wrapper ")
+                                            select#Area2(class="form-control")
+                                                option(value="", disabled, selected) To 
+                                                option(value="option1") Option 1
+                                                option(value="option2") Option 2
+                                                option(value="option3") Option 3
+                                            i(class=" bi bi-caret-down-fill")
+                            div
+            div(class="d-xxl-block d-none main_img", )
+                img(src="../img/Group 16.png", alt="", width="100%", height="100%", style=" object-fit: contain;  ")
+        section(class="section-colors_primary  ")
+            div(class="  d-flex container-fluid ", style="padding: 90px 20px; position: relative;")
+                div(class="triangle-topright", style="position: absolute; top:38%;")
+                span(class="h2 ", style="padding: 0 20px;") TOP PROJECTS
+            // Slider main container
+            div(class="swiper swiper-photocards  ")
+                // Additional required wrapper
+                div(class="swiper-wrapper ", style="height:1007px; ", lazy="true")
+                    // Slides
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+        section(class="section-colors_primary ")
+            div(class="  d-flex justify-content-between align-items-center container-fluid ", style=" position: relative;")
+                div.triangle-topright(style="position: absolute; top:42%;")
+                span(class="h3 py-5", style="padding: 0 20px;") NEW PROJECTS
+                div(class="d-lg-flex justify-content-end w-50 h-100 d-none")
+                    img(src="../img/Group 515.png", alt="", width="100%", height="225")
+            // Slider main container
+            div(class="swiper swiper-photocards  ")
+                // Additional required wrapper
+                div(class="swiper-wrapper ", style="height:1007px; ", lazy="true")
+                    // Slides
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+        section(class="section-colors_secondary")
+            div(class="  d-flex justify-content-between align-items-center container-fluid ", style=" position: relative;")
+                div.triangle-topright(style="position: absolute; top:42%;")
+                span(class="h3 py-5", style="padding: 0 20px;") LATEST ARTICLES
+                div(class="d-lg-flex justify-content-end w-50 h-100 d-none")
+                    img(src="../img/Group 142.png", alt="", width="100%", height="225")
+            // Slider main container
+            div(class="swiper swiper-photocards")
+                // Additional required wrapper
+                div(class="swiper-wrapper ", style="height:500px; ", lazy="true")
+                    // Slides
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative overflow-hidden")
+                            a(class="overflow-hidden swiper-img  ", href="project.html")
+                                img(class="overflow-hidden", style="object-fit: cover;z-index: 10;overflow: hidden;", src=" ../img/Group 506.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class="position-absolute top-0  text_primary container pt-5 swiper-title")
+                                    h2 PROJECT NAME
+                                    p DEVELOPER
+                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 300px ; height: 300px; position: relative;")
+                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 150px ; height: 150px; z-index: 2;")
+                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 50px;")
+                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+        section(class="pb-4 section-colors_secondary ")
+            div(class="  d-flex container-fluid ", style="padding: 100px 20px; position: relative;")
+                div(class="triangle-topright", style="position: absolute; top:38%;")
+                span(class="h2 ", style="padding: 0 20px;") OUR DEVELOPERS
+            // Slider main container
+            div(class="swiper swiper-brands  ")
+                // Additional required wrapper
+                div(class="swiper-wrapper ", style="height:100px; ", lazy="true")
+                    // Slides
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 65.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 64.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 57.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 65.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 64.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 57.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 65.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 64.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 57.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 65.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 64.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 57.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 65.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 64.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 57.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 65.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 64.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 57.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 65.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 64.png", height="100%", width="100%", alt="", loading="lazy")
+                    div(class="swiper-slide  ")
+                        div(class=" h-100  position-relative")
+                            img(style="object-fit: contain;", src="../img/Group 57.png", height="100%", width="100%", alt="", loading="lazy")
+        section(class="page-section section-colors_secondary", style="padding: 90px 0;")
+            div
+                hr(class="my-0 mx-auto", style="height: 1px; background-color: #F0F7EE ;width: 90%;")
+                div(class="position-relative bg_primary d-flex justify-content-center align-items-center ")
+                    div(class=" bg_primary d-flex justify-content-center align-items-center ", style="width: 150px;height: 150px;position: absolute; top:-75px;  z-index: 5;")
+                        img(style="object-fit: contain;", src="../img/Group 128.png", height="50%", width="50%", alt="", loading="lazy")
+            div(class="container py-5 px-4 px-lg-5")
+                div(class="py-5")
+                    div(class="row gx-4 gx-lg-5 justify-content-center py-5")
+                        div(class="col-lg-8 col-xl-6 text-center")
+                            h2(class=" text_secondary") NEED EXPERT ADVICE ?
+                            small(class=" mb-5 ") Fill out the form and one of our property consultants will contact you.
+                    div(class="row gx-4 gx-lg-5 justify-content-center mb-5")
+                        div(class="col-lg-6")
+                            form#contactForm(action="")
+                                // Name input
+                                div(class="form-floating mb-3 section-colors_primary position-relative")
+                                    input#name(class="form-control rounded-0 section-colors_primary", type="text", placeholder="Enter your name...", required)
+                                    label(for="name") Full name
+                                    div(class="triangle-topright", style="position: absolute; top:0; right: 0;")
+                                    div(class="invalid-feedback") A name is required.
+                                // Email address input
+                                div(class="form-floating mb-3 section-colors_primary position-relative")
+                                    input#email(class="form-control rounded-0 section-colors_primary", type="email", placeholder="name@example.com", required)
+                                    label(for="email") Email address
+                                    div(class="triangle-topright", style="position: absolute; top:0; right: 0;")
+                                    div(class="invalid-feedback") An email is required.
+                                    div(class="invalid-feedback") Email is not valid.
+                                // Phone number input
+                                div(class="form-floating mb-3 section-colors_primary position-relative")
+                                    input#phone(class="form-control rounded-0 section-colors_primary", type="tel", placeholder="(123) 456-7890", required)
+                                    label(for="phone") Phone number
+                                    div(class="triangle-topright", style="position: absolute; top:0; right: 0;")
+                                    div(class="invalid-feedback") A phone number is required.
+                                div(class="form-floating mb-3 section-colors_primary  position-relative  w-100 ")
+                                    label(for="property", class="sr-only") property
+                                    select(class="form-select form-select-xl section-colors_primary select-style", aria-label=".form-select-lg example")
+                                        option(selected) PROPERTY TYPE
+                                        option(value="1") One
+                                        option(value="2") Two
+                                        option(value="3") Three
+                                    div(class="triangle-topright", style="position: absolute; top:0; right: 0;")
+                                div(class="form-floating mb-3 section-colors_primary position-relative")
+                                    input#location(class="form-control rounded-0 section-colors_primary", type="text", placeholder="Enter your location...", required)
+                                    label(for="location") PREFERRED LOCATION
+                                    div(class="triangle-topright", style="position: absolute; top:0; right: 0;")
+                                    div(class="invalid-feedback") A location is required.
+                                // Submit Button
+                                div(class="d-grid section-colors_third ")
+                                    button(class="btn  btn-xl rounded-0", type="submit") Submit
+                div(class="mt-5 py-5")
+                    div(class="row gx-4 gx-lg-5  ")
+                        div(class="col-lg-8 col-xl-6 text-center mx-auto")
+                            h4(class=" text_primary") GET IN TOUCH WITH US
+                    div(class="row pt-5")
+                        div(class="col-lg-4 text-center mb-5 mb-lg-0")
+                            img(src="../img/Group 2.png", alt="", width="35px", height="50px")
+                            div(class="mt-4") PHONE
+                            div(class="flex-column d-flex py-4 text_primary ")
+                                a(class="text_primary", href="tel:++1 (555) 123-4567")  +1 (555) 123-4567
+                                a(class="text_primary", href="tel:+1 (555) 123-4567") +1 (555) 123-4567
+                        div(class="col-lg-4 text-center mb-5 mb-lg-0")
+                            img(src="../img/Group 130.png", alt="", width="35px", height="50px")
+                            div(class="mt-4") LOCATION
+                            div(class="flex-column d-flex py-4 text_primary ")
+                                a(class="text_primary", href="tel:++1 (555) 123-4567")  +1 (555) 123-4567
+                                a(class="text_primary", href="tel:+1 (555) 123-4567") +1 (555) 123-4567
+                        div(class="col-lg-4 text-center mb-5 mb-lg-0")
+                            img(src="../img/Group 133.png", alt="", width="65px", height="50px")
+                            div(class="mt-4") EMAIL
+                            div(class="flex-column d-flex py-4 text_primary ")
+                                a(class="text_primary", href="mailto:mail.upshare.com ")  mail.upshare.com 
+                                a(class="text_primary",href="mailto:mail.upshareproperties.com") mail.upshareproperties.com
+                div(class="pt-5 mt-5")
+                    div(class="row gx-4 gx-lg-5 ")
+                        div(class="col-lg-8 col-xl-6 text-center mx-auto")
+                            h4(class=" text_primary") CONNECT WITH US
+                    div(class="row container w-50 mx-auto pt-5")
+                        div(class="col-lg-4 text-center mb-5 mb-lg-0")
+                            i(class="bi bi-instagram mb-4 text_primary icon-size")
+                        div(class="col-lg-4 text-center mb-5 mb-lg-0")
+                            i(class="bi bi-facebook mb-4 text_primary icon-size")
+                        div(class="col-lg-4 text-center mb-5 mb-lg-0")
+                            i(class="bi bi-whatsapp mb-4 text_primary icon-size")
+        include components/footer.pug
+        script(src="../js/app.js").
+			

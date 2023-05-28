@@ -1,0 +1,253 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem !important;
+    color: #F0F7EE;
+}
+
+
+
+.bg_primary{
+  background-color: #0E3840;
+}
+.bg_secondary{
+  background-color: #F0F7EE;
+}
+.text_primary{
+  color: #F0F7EE;
+}
+.text_secondary {
+  color: #87BBA2;
+}
+.text_third{
+  color: #0E3840;
+}
+
+.section-colors_primary{
+  background-color: #F0F7EE;
+  color: #0E3840;
+}
+.section-colors_secondary{
+  background-color: #0E3840;
+  color: #F0F7EE;
+}
+.section-colors_third{
+  background-color: #87BBA2;
+  color: #0E3840;
+}
+
+.icon-size{
+font-size: 50px;
+}
+
+[dir="rtl"] .main_img{
+  padding: 0;
+   position:absolute;
+   top: 0;
+   left: 0;
+    height: 100%;
+    direction: rtl;
+
+    display: none !important;;
+}
+.main_img{
+  padding: 0;
+   position:absolute;
+   top: 0;
+   right: 0;
+    height: 100%;
+    direction: ltr;
+}
+.triangle-topright {
+  width: 0;
+  height: 0;
+  border-top: 10px solid #87BBA2;
+  border-left: 10px solid transparent;
+  padding-top: 2px;
+}
+.triangle-top {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid #87BBA2;
+}
+
+.activecheckbox{
+    color: #C76E4E;
+}
+
+
+.text-red {
+    color: #C76E4E;
+}
+
+.nav-link{
+    color: #F0F7EE;
+
+}
+.collapse  .active{
+  color: #87BBA2 !important;
+  position: relative;
+}
+
+.navbar-scrolled .nav-link{
+    color: #0E3840 ;
+}
+.navbar-scrolled.active{
+  color: #87BBA2 !important;
+}
+.navbar-scrolled {
+    background-color: #F0F7EE  !important;
+    color: #0E3840 !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.btn-check:checked + .btn-secondary {
+  background-color: #87BBA2;
+  border-color: #87BBA2;
+  color: #0E3840;
+}
+.btn-secondary {
+  background-color: #F0F7EE;
+  border-color: #F0F7EE;
+  color: #0E3840;
+}
+.btn-contact{
+  background-color: transparent;
+  border-color: #0E3840;
+  color: #0E3840;
+}
+.select-style{
+  font-size: 16px !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important; 
+}
+.btn-secondary:hover {
+  background-color: #F0F7EE;
+  border-color: #F0F7EE;
+  color: #0E3840;
+}
+
+
+.scheck {
+  width: 16px !important; 
+  height:16px !important;
+}
+
+.domain-search {
+  margin: 0;
+  padding:206px 0;
+
+}
+.domain-search .input-group-addon {
+  border: none;
+}
+.domain-search .input-group + p strong {
+  margin-right: 40px;
+}
+
+.input-group .input-group-addon [type="submit"], .input-group .input-group-addon button {
+  border: none;
+  border-radius: 0;
+}
+
+.btn-primary {
+  padding: 0 40px;
+  line-height: 54px;
+  background: #87BBA2;
+  color: #0E3840;
+}
+
+
+.form-check{
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  background-color: #F0F7EE;
+ 
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #F0F7EE;
+  color: #0E3840;
+  border: none;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px 40px 10px 10px;
+  width: 100%;
+}
+
+.select-wrapper i {
+  position: absolute;
+  color: #0E3840;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+
+.hover-effect{
+ opacity: 0;
+ transition: opacity 2s;
+}
+.hover-effect:hover{
+ opacity: 100;
+ transition: opacity 2s;
+}
+.swper-img{
+  transition: transform 2s;
+}
+.swiper-img:hover img {
+  transform: scale(1.5);
+  transition: transform 2s;
+cursor: pointer;
+}
+
+
+.section_title{
+  font-size: 90px;
+  top:-130px; 
+}
+.section_padding{
+  padding: 70px 60px;
+}
+.about_padding{
+  padding: 150px 60px;
+}
+
+@media only screen and (max-width: 600px)  {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem !important;
+    color: #F0F7EE;
+}
+@media only screen and (max-width: 1500px)  {
+  body {
+
+    font-size: 1rem !important;
+
+}
+.select-style{
+  font-size: 16px !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+  .section_title{
+    font-size: 50px !important;
+    top:-110px; 
+  }
+  .section_padding{
+    padding: 70px 10px;
+  }
+}
+

@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upshare</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg_primary sticky-top home_nav">
+      <div class="container-fluid px-lg-5 d-lg-flex justify-content-between"><a class="navbar-brand flex-grow-1" href="#"><img class="d-inline-block align-text-top changesrc" src="../img/Group 11.png" alt="Logo" height="50"></a>
+        <button class="navbar-toggler text-white flex-grow-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon text-white"></span></button>
+        <div class="collapse navbar-collapse d-lg-flex gap-lg-5 justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">SEARCH</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ARTICLES</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+          </ul>
+          <div class="d-lg-flex justify-content-between ">
+            <button class="btn me-2 log text_primary" type="button"><i class="bi bi-person me-2"></i><span>LOG IN</span></button>
+            <button class="btn text-red" type="button">En/ع</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="container-fluid  bg_primary position-relative">
+      <div class="row ">
+        <div class="col-xxl-6 col p-0 px-lg-5">
+          <form class="row domain-search">
+            <h1 class="mb-lg-5 mb-3">Find your Perfect Property.</h1>
+            <div class="container">
+              <div class="form-check form-check-inline form-check-square">
+                <input class="btn-check rounded-0" id="option8" type="radio" name="options" autocomplete="off" checked>
+                <label class="btn btn-secondary rounded-0 mb-2" for="option8">RESIDENTIAL</label>
+                <input class="btn-check rounded-0" id="option5" type="radio" name="options" autocomplete="off">
+                <label class="btn btn-secondary rounded-0 mb-2" for="option5">COMMERCIAL</label>
+              </div>
+              <div class="input-group">
+                <input class="form-control rounded-0" type="search"><span class="input-group-addon">
+                  <input class="btn btn-primary" type="submit" value="Search"></span>
+              </div>
+              <div class="row my-5">
+                <div class="col-6">
+                  <div class="activecheckbox form-check-inline" id="check1">
+                    <input class="btn-check rounded-0" id="option11" type="radio" name="options2" autocomplete="off" checked>
+                    <label class="btn-secondary rounded-0 scheck" for="option11"></label>
+                    <label class="m-2" for="option11">BUY</label>
+                  </div>
+                  <div class="form-check-inline" id="check2">
+                    <input class="btn-check rounded-0" id="option12" type="radio" name="options2" autocomplete="off">
+                    <label class="btn-secondary rounded-0 scheck" for="option12"></label>
+                    <label class="m-2" for="option12">RENT</label>
+                  </div>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center"><a href="search.html" style="color: #87bba2">ADVANCED SEARCH</a></div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="form-group col">
+                  <label class="mb-2 text_secondary" for="exampleSelect">PRICE <small>EGP</small></label>
+                  <div>
+                    <div class="select-wrapper mb-2">
+                      <select class="form-control" id="exampleSelect">
+                        <option value="" disabled selected>FROM</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                      </select><i class=" bi bi-caret-down-fill"></i>
+                    </div>
+                    <div class="select-wrapper ">
+                      <label class="sr-only" for="exampleSelect2">option</label>
+                      <select class="form-control" id="exampleSelect2">
+                        <option value="" disabled selected>To </option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                      </select><i class=" bi bi-caret-down-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col">
+                  <label class="mb-2 text_secondary" for="Area">AREA <small>M <sup>2</sup></small></label>
+                  <div>
+                    <div class="select-wrapper mb-2">
+                      <select class="form-control" id="Area">
+                        <option value="" disabled selected>FROM</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                      </select><i class=" bi bi-caret-down-fill"></i>
+                    </div>
+                    <div class="select-wrapper ">
+                      <select class="form-control" id="Area2">
+                        <option value="" disabled selected>To </option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                      </select><i class=" bi bi-caret-down-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="d-xxl-block d-none main_img"><img src="../img/Group 16.png" alt="" width="100%" height="100%" style=" object-fit: contain;  "></div>
+    </section>
+    <section class="section-colors_primary  ">
+      <div class="  d-flex container-fluid " style="padding: 90px 20px; position: relative;">
+        <div class="triangle-topright" style="position: absolute; top:38%;"></div><span class="h2 " style="padding: 0 20px;">TOP PROJECTS</span>
+      </div>
+      <!-- Slider main container-->
+      <div class="swiper swiper-photocards  ">
+        <!-- Additional required wrapper-->
+        <div class="swiper-wrapper " style="height:1007px; " lazy="true">
+          <!-- Slides-->
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-colors_primary ">
+      <div class="  d-flex justify-content-between align-items-center container-fluid " style=" position: relative;">
+        <div class="triangle-topright" style="position: absolute; top:42%;"></div><span class="h3 py-5" style="padding: 0 20px;">NEW PROJECTS</span>
+        <div class="d-lg-flex justify-content-end w-50 h-100 d-none"><img src="../img/Group 515.png" alt="" width="100%" height="225"></div>
+      </div>
+      <!-- Slider main container-->
+      <div class="swiper swiper-photocards  ">
+        <!-- Additional required wrapper-->
+        <div class="swiper-wrapper " style="height:1007px; " lazy="true">
+          <!-- Slides-->
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-colors_secondary">
+      <div class="  d-flex justify-content-between align-items-center container-fluid " style=" position: relative;">
+        <div class="triangle-topright" style="position: absolute; top:42%;"></div><span class="h3 py-5" style="padding: 0 20px;">LATEST ARTICLES</span>
+        <div class="d-lg-flex justify-content-end w-50 h-100 d-none"><img src="../img/Group 142.png" alt="" width="100%" height="225"></div>
+      </div>
+      <!-- Slider main container-->
+      <div class="swiper swiper-photocards">
+        <!-- Additional required wrapper-->
+        <div class="swiper-wrapper " style="height:500px; " lazy="true">
+          <!-- Slides-->
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative overflow-hidden"><a class="overflow-hidden swiper-img  " href="project.html"><img class="overflow-hidden" style="object-fit: cover;z-index: 10;overflow: hidden;" src=" ../img/Group 506.png" height="100%" width="100%" alt="" loading="lazy">
+                <div class="position-absolute top-0  text_primary container pt-5 swiper-title">
+                  <h2>PROJECT NAME</h2>
+                  <p>DEVELOPER</p>
+                </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                    <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
+                  </div>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-4 section-colors_secondary ">
+      <div class="  d-flex container-fluid " style="padding: 100px 20px; position: relative;">
+        <div class="triangle-topright" style="position: absolute; top:38%;"></div><span class="h2 " style="padding: 0 20px;">OUR DEVELOPERS</span>
+      </div>
+      <!-- Slider main container-->
+      <div class="swiper swiper-brands  ">
+        <!-- Additional required wrapper-->
+        <div class="swiper-wrapper " style="height:100px; " lazy="true">
+          <!-- Slides-->
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 65.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 64.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 57.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 65.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 64.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 57.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 65.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 64.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 57.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 65.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 64.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 57.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 65.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 64.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 57.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 65.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 64.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 57.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 65.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 64.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class=" h-100  position-relative"><img style="object-fit: contain;" src="../img/Group 57.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section section-colors_secondary" style="padding: 90px 0;">
+      <div>
+        <hr class="my-0 mx-auto" style="height: 1px; background-color: #F0F7EE ;width: 90%;">
+        <div class="position-relative bg_primary d-flex justify-content-center align-items-center ">
+          <div class=" bg_primary d-flex justify-content-center align-items-center " style="width: 150px;height: 150px;position: absolute; top:-75px;  z-index: 5;"><img style="object-fit: contain;" src="../img/Group 128.png" height="50%" width="50%" alt="" loading="lazy"></div>
+        </div>
+      </div>
+      <div class="container py-5 px-4 px-lg-5">
+        <div class="py-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center py-5">
+            <div class="col-lg-8 col-xl-6 text-center">
+              <h2 class=" text_secondary">NEED EXPERT ADVICE ?</h2><small class=" mb-5 ">Fill out the form and one of our property consultants will contact you.</small>
+            </div>
+          </div>
+          <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+              <form id="contactForm" action="">
+                <!-- Name input-->
+                <div class="form-floating mb-3 section-colors_primary position-relative">
+                  <input class="form-control rounded-0 section-colors_primary" id="name" type="text" placeholder="Enter your name..." required>
+                  <label for="name">Full name</label>
+                  <div class="triangle-topright" style="position: absolute; top:0; right: 0;"></div>
+                  <div class="invalid-feedback">A name is required.</div>
+                </div>
+                <!-- Email address input-->
+                <div class="form-floating mb-3 section-colors_primary position-relative">
+                  <input class="form-control rounded-0 section-colors_primary" id="email" type="email" placeholder="name@example.com" required>
+                  <label for="email">Email address</label>
+                  <div class="triangle-topright" style="position: absolute; top:0; right: 0;"></div>
+                  <div class="invalid-feedback">An email is required.</div>
+                  <div class="invalid-feedback">Email is not valid.</div>
+                </div>
+                <!-- Phone number input-->
+                <div class="form-floating mb-3 section-colors_primary position-relative">
+                  <input class="form-control rounded-0 section-colors_primary" id="phone" type="tel" placeholder="(123) 456-7890" required>
+                  <label for="phone">Phone number</label>
+                  <div class="triangle-topright" style="position: absolute; top:0; right: 0;"></div>
+                  <div class="invalid-feedback">A phone number is required.</div>
+                </div>
+                <div class="form-floating mb-3 section-colors_primary  position-relative  w-100 ">
+                  <label class="sr-only" for="property">property</label>
+                  <select class="form-select form-select-xl section-colors_primary select-style" aria-label=".form-select-lg example">
+                    <option selected>PROPERTY TYPE</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <div class="triangle-topright" style="position: absolute; top:0; right: 0;"></div>
+                </div>
+                <div class="form-floating mb-3 section-colors_primary position-relative">
+                  <input class="form-control rounded-0 section-colors_primary" id="location" type="text" placeholder="Enter your location..." required>
+                  <label for="location">PREFERRED LOCATION</label>
+                  <div class="triangle-topright" style="position: absolute; top:0; right: 0;"></div>
+                  <div class="invalid-feedback">A location is required.</div>
+                </div>
+                <!-- Submit Button-->
+                <div class="d-grid section-colors_third ">
+                  <button class="btn  btn-xl rounded-0" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 py-5">
+          <div class="row gx-4 gx-lg-5  ">
+            <div class="col-lg-8 col-xl-6 text-center mx-auto">
+              <h4 class=" text_primary">GET IN TOUCH WITH US</h4>
+            </div>
+          </div>
+          <div class="row pt-5">
+            <div class="col-lg-4 text-center mb-5 mb-lg-0"><img src="../img/Group 2.png" alt="" width="35px" height="50px">
+              <div class="mt-4">PHONE</div>
+              <div class="flex-column d-flex py-4 text_primary "><a class="text_primary" href="tel:++1 (555) 123-4567"> +1 (555) 123-4567</a><a class="text_primary" href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a></div>
+            </div>
+            <div class="col-lg-4 text-center mb-5 mb-lg-0"><img src="../img/Group 130.png" alt="" width="35px" height="50px">
+              <div class="mt-4">LOCATION</div>
+              <div class="flex-column d-flex py-4 text_primary "><a class="text_primary" href="tel:++1 (555) 123-4567"> +1 (555) 123-4567</a><a class="text_primary" href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a></div>
+            </div>
+            <div class="col-lg-4 text-center mb-5 mb-lg-0"><img src="../img/Group 133.png" alt="" width="65px" height="50px">
+              <div class="mt-4">EMAIL</div>
+              <div class="flex-column d-flex py-4 text_primary "><a class="text_primary" href="mailto:mail.upshare.com "> mail.upshare.com </a><a class="text_primary" href="mailto:mail.upshareproperties.com">mail.upshareproperties.com</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5 mt-5">
+          <div class="row gx-4 gx-lg-5 ">
+            <div class="col-lg-8 col-xl-6 text-center mx-auto">
+              <h4 class=" text_primary">CONNECT WITH US</h4>
+            </div>
+          </div>
+          <div class="row container w-50 mx-auto pt-5">
+            <div class="col-lg-4 text-center mb-5 mb-lg-0"><i class="bi bi-instagram mb-4 text_primary icon-size"></i></div>
+            <div class="col-lg-4 text-center mb-5 mb-lg-0"><i class="bi bi-facebook mb-4 text_primary icon-size"></i></div>
+            <div class="col-lg-4 text-center mb-5 mb-lg-0"><i class="bi bi-whatsapp mb-4 text_primary icon-size"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center text-lg-start  m-auto py-5 ">
+      <hr class="my-2  w-50 mx-auto " style="height: 3px;">
+      <!-- Grid container-->
+      <div class=" p-4 m-auto" style="width: fit-content;">
+        <!-- Grid row-->
+        <div class="row my-3 g">
+          <!-- Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <div class=" w-50 shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"><img src="../img/Group 140.png" height="100%" width="100%" alt="" loading="lazy"></div>
+          </div>
+          <!-- Grid column-->
+          <!-- Grid column-->
+          <div class="col-lg-4 col-md-6 mb-10 mb-md-0">
+            <h5 class="text-uppercase mb-4">Find a home</h5>
+            <ul class="list-unstyled text_third">
+              <li class="mb-2"><a class=" text-decoration-none" href="#!">Residential</a></li>
+              <li class="mb-2"><a class=" text-decoration-none" href="#!">Residential Rent</a></li>
+              <li class="mb-2"><a class=" text-decoration-none" href="#!">Coastal</a></li>
+            </ul>
+          </div>
+          <!-- Grid column-->
+          <!-- Grid column-->
+          <div class="col-lg-4 col-md-6  mb-10 mb-md-0">
+            <h5 class="text-uppercase mb-4 text-nowrap">Commercial Rent</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a class=" text-decoration-none" href="#!">Projects</a></li>
+              <li class="mb-2"><a class=" text-decoration-none" href="#!">Retail</a></li>
+              <li class="mb-2"><a class=" text-decoration-none" href="#!">Offices</a></li>
+            </ul>
+          </div>
+          <!-- Grid column-->
+        </div>
+        <!-- Grid row-->
+      </div>
+      <!-- Grid container-->
+      <!-- Copyright-->
+      <div class="text-center  p-3 fs-6">© 2023 — Upshare Properties All Rights Reserved. Developed by<a class="mx-2" href="">Disirius.</a></div>
+      <!-- Copyright-->
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
