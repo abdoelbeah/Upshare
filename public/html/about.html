@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
     <title>Upshare</title>
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/x-icon" href="../img/Group 140.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
@@ -18,13 +22,13 @@
   <body style="background-color: #F0F7EE;">
     <nav class="navbar navbar-expand-lg bg_primary sticky-top home_nav">
       <div class="container-fluid px-lg-5 d-lg-flex justify-content-between"><a class="navbar-brand flex-grow-1" href="#"><img class="d-inline-block align-text-top changesrc" src="../img/Group 11.png" alt="Logo" height="50"></a>
-        <button class="navbar-toggler text-white flex-grow-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon text-white"></span></button>
+        <button class="navbar-toggler text_third flex-grow-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="bi bi-list text_primary"></span></button>
         <div class="collapse navbar-collapse d-lg-flex gap-lg-5 justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
             <li class="nav-item"><a class="nav-link" href="#">SEARCH</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">ARTICLES</a></li>
+            <li class="nav-item"><a class="nav-link" href="articles.html">ARTICLES</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
           </ul>
           <div class="d-lg-flex justify-content-between ">
@@ -36,7 +40,7 @@
     </nav>
     <section class="section-colors_primary about_padding ">
       <div class="row">
-        <div class="col-12 col-sm  py-4">
+        <div class="col-12 col-sm  py-4 ">
           <h1>We Are <br>Upshare Properties</h1>
         </div>
         <div class="col-12 col-sm  ">
@@ -80,9 +84,9 @@
     <section class="section-colors_primary  ">
       <div class="container-lg">
         <div class="  d-flex container mt-5 " style="padding: 50px 20px; position: relative;">
-          <div id="triangle-topright" style="position: absolute; top:38%;"></div><span class="h3 " style="padding: 0 20px;">Our Services</span>
+          <div class="triangle-topright" style="position: absolute; top:38%;"></div><span class="h3 " style="padding: 0 20px;">Our Services</span>
         </div>
-        <div class="px-md-5 mt-5">
+        <div class="px-md-5 mt-lg-5 mt-0 ">
           <div class="d-flex align-items-center px-md-5 py-5 mt-md-5 justify-content-between">
             <div class="mx-3"><img src="../img/Path 867.png" alt="" width="" height="100"></div>
             <p>Acting as a mediator between buyers and sellers to negotiate sales contracts</p>
@@ -108,7 +112,7 @@
     </section>
     <section class="section-colors_primary  ">
       <div class="  d-flex container-fluid " style="padding: 50px 20px; position: relative;">
-        <div id="triangle-topright" style="position: absolute; top:38%;"></div><span class="h3 " style="padding: 0 20px;">TOP PROJECTS</span>
+        <div class="triangle-topright" style="position: absolute; top:38%;"></div><span class="h3 " style="padding: 0 20px;">TOP PROJECTS</span>
       </div>
       <!-- Slider main container-->
       <div class="swiper swiper-photocards  ">
@@ -121,9 +125,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -134,9 +139,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -147,9 +153,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -160,9 +167,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -173,9 +181,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -186,9 +195,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -199,9 +209,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -212,9 +223,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -225,9 +237,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -238,9 +251,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -251,9 +265,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -264,9 +279,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -277,9 +293,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -290,9 +307,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -303,9 +321,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -315,8 +334,8 @@
     </section>
     <section class="section-colors_primary ">
       <div class="  d-flex justify-content-between align-items-center container-fluid " style=" position: relative;">
-        <div id="triangle-topright" style="position: absolute; top:38%;"></div><span class="h3 " style="padding: 0 20px;">NEW PROJECTS</span>
-        <div class="d-flex justify-content-end w-50 h-100 "><img src="../img/Group 515.png" alt="" width="60%" height="100%"></div>
+        <div class="triangle-topright" style="position: absolute; top:38%;"></div><span class="h3 py-5" style="padding: 0 20px;">NEW PROJECTS</span>
+        <div class="d-lg-flex justify-content-end w-50 h-100  d-none "><img src="../img/Group 515.png" alt="" width="100%" height="225"></div>
       </div>
       <!-- Slider main container-->
       <div class="swiper swiper-photocards  ">
@@ -342,9 +361,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -355,9 +375,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -368,9 +389,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -381,9 +403,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -394,9 +417,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -407,9 +431,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -420,9 +445,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -433,9 +459,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -446,9 +473,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -459,9 +487,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -472,9 +501,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -485,9 +515,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -498,9 +529,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -511,9 +543,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -524,9 +557,10 @@
                   <h2>PROJECT NAME</h2>
                   <p>DEVELOPER</p>
                 </div>
-                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative;">
-                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 2;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
+                <div class="w-100 h-100 overlay position-absolute top-0" style="z-index:5;"> </div>
+                <div class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 10;">
+                  <div class="  rounded-pill d-flex justify-content-center align-items-center " style="width: 300px ; height: 300px; position: relative; z-index: 10;">
+                    <div class=" bg_primary rounded-pill d-flex justify-content-center align-items-center " style="width: 150px ; height: 150px; z-index: 10;"><i class="fa-solid fa-magnifying-glass-plus text_primary" style="font-size: 50px;"></i></div>
                     <div class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75"></div>
                   </div>
                 </div></a></div>
@@ -536,7 +570,7 @@
     </section>
     <section class="pb-5 mb-5 section-colors_primary ">
       <div class="  d-flex container-fluid mb-5" style="padding: 50px 20px; position: relative;">
-        <div id="triangle-topright" style="position: absolute; top:38%;"></div><span class="h3 " style="padding: 0 20px;">OUR DEVELOPERS</span>
+        <div class="triangle-topright" style="position: absolute; top:38%;"></div><span class="h3 " style="padding: 0 20px;">OUR DEVELOPERS</span>
       </div>
       <!-- Slider main container-->
       <div class="swiper swiper-brands  ">

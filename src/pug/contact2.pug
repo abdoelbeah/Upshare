@@ -5,47 +5,50 @@ html(lang="en", dir="ltr")
     body
         include components/navbar.pug
         section(class="page-section section-colors_secondary", style="padding: 80px 0;")
-            div(class=" py-5  px-5")
+            div(class=" py-3  px-5")
                 div(class="row")
-                    div(class="col-lg-6 col-12 d-flex align-items-center px-lg-5")
+                    div(class="col-lg-6 col-12 d-lg-flex align-items-center px-lg-5 d-none position-relative")
                         h1(class="me-5 text_secondary") Contact Us
                         img(src="../img/Group 607.png", alt="", width="47px", height="47px")
+                        div(class="d-lg-flex justify-content-end w-100 h-90 d-none position-absolute" style="left:0;bottom:0;" )
+                            img(src="../img/Group 462.png", alt="", width="100%", height="100%")
                     div(class=" col-lg-6 col-12")
-                        div(class="row gx-4 gx-lg-5 justify-content-center py-5")
+                        div(class="row gx-4 gx-lg-5 justify-content-center py-3 ")
                             div(class="col px-lg-5")
-                                h2(class=" text_secondary") NEED EXPERT ADVICE ?
+                                h2(class=" text_secondary") NEED EXPERT ADVICE?
                                 small(class=" mb-5 ") Fill out the form and one of our property consultants will contact you.
+
                         div(class="row gx-4 gx-lg-5 justify-content-center mb-5")
                             div(class="col")
                                 form#contactForm(action="")
                                     // Name input
-                                    div(class="form-floating form-group floating-label-form-group controls mb-3 section-colors_primary position-relative")
-                                        input#name(class="form-control rounded-0 section-colors_primary", type="text", placeholder="Enter your name...", required)
+                                    div(class="form-floating form-group floating-label-form-group controls mb-3 section-colors_forth position-relative")
+                                        input#name(class="form-control rounded-0 section-colors_forth", type="text", placeholder="Enter your name...", required)
                                         label(for="name") Full name
                                         div(class="triangle-topright", style="position: absolute; top:0; right: 0;")
                                         div(class="invalid-feedback") A name is required.
                                     // Phone number input
-                                    div(class="form-floating mb-3 section-colors_primary position-relative")
-                                        input#phone(class="form-control rounded-0 section-colors_primary", type="tel", placeholder="(123) 456-7890", required)
+                                    div(class="form-floating mb-3 section-colors_forth position-relative")
+                                        input#phone(class="form-control rounded-0 section-colors_forth", type="tel", placeholder="(123) 456-7890", required)
                                         label(for="phone") Phone number
                                         div(class="triangle-topright", style="position: absolute; top:0; right: 0;")
                                         div(class="invalid-feedback") A phone number is required.
-                                    div(class="form-floating mb-3 section-colors_primary  position-relative  w-100 ")
+                                    div(class="form-floating mb-3 section-colors_forth  position-relative  w-100 ")
                                         label(for="property", class="sr-only") property
-                                        select(class="form-select form-select-xl section-colors_primary select-style", aria-label=".form-select-lg example")
-                                            option(selected) PROPERTY TYPE
-                                            option(value="1") One
-                                            option(value="2") Two
-                                            option(value="3") Three
+                                        select(class="form-select form-select-xl section-colors_forth select-style", aria-label=".form-select-lg example")
+                                            option(selected class="bg_primary") PROPERTY TYPE
+                                            option(value="1" class="bg_primary") One
+                                            option(value="2" class="bg_primary") Two
+                                            option(value="3" class="bg_primary") Three
                                         div(class="triangle-topright", style="position: absolute; top:0; right: 0;")
-                                    div(class="form-floating mb-3 section-colors_primary position-relative")
-                                        input#location(class="form-control rounded-0 section-colors_primary", type="text", placeholder="Enter your location...", required)
+                                    div(class="form-floating mb-3 section-colors_forth position-relative")
+                                        input#location(class="form-control rounded-0 section-colors_forth", type="text", placeholder="Enter your location...", required)
                                         label(for="location") PREFERRED LOCATION
                                         div(class="triangle-topright", style="position: absolute; top:0; right: 0;")
                                         div(class="invalid-feedback") A location is required.
                                     // Submit Button
-                                    div(class="d-grid section-colors_third ")
-                                        button(class="btn  btn-xl rounded-0", type="submit") Send
+                                    div(class="d-grid mt-4")
+                                        button(class="btn  p-3  btn-xl rounded-0 w-25 section-colors_third_dark mx-auto", type="submit") Send
                 div(class="mt-5 py-5")
                     div(class="row gx-4 gx-lg-5  ")
                         div(class="col-lg-8 col-xl-6 text-center mx-auto")
