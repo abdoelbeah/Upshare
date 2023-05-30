@@ -4,13 +4,530 @@ html(lang="en", dir="ltr")
         include components/head.pug
     body(class="bg_secondary")
         include components/navbar.pug
-        section()
+        section(class="px-2 px-lg-5 py-5")
             form(action="")
-                div
-                    div(class="input-group")
-                        input(class="form-control rounded-0", type="search")
-                        span(class="input-group-addon")
-                            input(class="btn btn-primary", type="submit", value="Search") 
+                    div(class="row " )
+                        div(class="col-9 col-lg-9 d-flex form-inputs rounded-0 px-1")
+                            input(class="form-control rounded-0 section-colors_primary shadow-sm", type="text", placeholder="Search")
+                            i(class="bi bi-search text_third"  )
+                        div(class="col-5 col-lg-3 mt-lg-0  justify-content-end d-none d-lg-flex ")
+                            button(class="btn section-colors_secondary rounded-0  p-3  w-100 d-flex justify-content-between filter_btn gap-2")
+                                span filters
+                                i(class="bi bi-sliders "  )
+                        div(class="col-3 col-lg-3 mt-lg-0  justify-content-end d-flex d-lg-none px-1" )
+                            button(class="btn section-colors_secondary rounded-0  px-2 py-3  w-100 d-flex justify-content-between filter_btn gap-1" type="button", data-bs-toggle="offcanvas", data-bs-target="#offcanvasExample", aria-controls="offcanvasExample")
+                                span filters
+                                i(class="bi bi-sliders "  )
+       
+                    div(class="row pt-5")
+                        div(class="col-lg-3 col-12 section-colors_secondary p-4 mb-5 d-none d-lg-block" style="height:max-content" )
+                            div 
+                                h5 FIND
+                                div(class=" my-3  "  )
+                                    div(class=" form-check-inline")
+                                        input#Property(class="btn-check rounded-0", type="radio", name="options1", autocomplete="off", checked)
+                                        label(class="btn-secondary2 border rounded-0 scheck", for="Property")
+                                        label(class="m-2", for="Property") Property
+                                    div(class="form-check-inline")
+                                        input#Compound(class="btn-check rounded-0", type="radio", name="options1", autocomplete="off")
+                                        label(class="btn-secondary2 border rounded-0 scheck", for="Compound")
+                                        label(class="m-2", for="Compound") Compound
+                            div 
+                                h5 PAYMENTS
+                                div(class=" my-3  px-2"  )       
+                                    div(class=" mb-3   position-relative")
+                                        label(for="input5", class="form-label") Down Payments
+                                        input#input5(type="number",placeholder="Max Amount", class="form-control rounded-0 section-colors_primary px-2 my-3", aria-labelledby="numberHelpBlock")
+                                    div(class=" mb-3  position-relative")
+                                        label(for="input6", class="form-label") Monthly Installments
+                                        input#input6(type="number",placeholder="Max Amount", class="form-control rounded-0 section-colors_primary px-2 my-3", aria-labelledby="numberHelpBlock")
+                                    div(class=" mb-3   position-relative  w-100 ")
+                                        label(for="property", class="mb-") Years Of Installments
+                                        select(class="form-select  section-colors_primary rounded-0 my-3", aria-label=".form-select example")
+                                            option(selected) 1 year
+                                            option(value="1") One
+                                            option(value="2") Two
+                                            option(value="3") Three
+                            div(class="overflow-auto")
+                                h5() BEDROOMS
+                                    
+
+                                div(class=" my-3  "  )
+                                    div(class="d-flex my-3 "  )
+                                        div(class=" form-check-inline")
+                                            input#one(class="btn-check rounded-0", type="radio", name="options4", autocomplete="off", checked)
+                                            label(class="btn-secondary3 border rounded-0 btn", for="one") 1
+
+                                        div(class="form-check-inline")
+                                            input#two(class="btn-check  rounded-0", type="radio", name="options4", autocomplete="off")
+                                            label(class="btn-secondary3 border rounded-0 btn", for="two") 2
+                                        div(class=" form-check-inline")
+                                            input#three(class="btn-check rounded-0", type="radio", name="options4", autocomplete="off")
+                                            label(class="btn-secondary3 border rounded-0 btn", for="three") 3
+
+                                        div(class="form-check-inline")
+                                            input#four(class="btn-check  rounded-0", type="radio", name="options4", autocomplete="off")
+                                            label(class="btn-secondary3 border rounded-0 btn", for="four") 4
+                                        div(class="form-check-inline")
+                                            input#five(class="btn-check  rounded-0", type="radio", name="options4", autocomplete="off")
+                                            label(class="btn-secondary3 border rounded-0 btn", for="five") 5
+                                        div(class="form-check-inline")
+                                            input#six(class="btn-check  rounded-0", type="radio", name="options4", autocomplete="off")
+                                            label(class="btn-secondary3 border rounded-0 btn", for="six") 6+
+                            div(class="overflow-auto")
+                                
+                                h5() BATHROOMS
+
+                                div(class=" my-3 "  )
+                                    div(class="d-flex my-3")
+                                        div(class=" form-check-inline")
+                                            input#one1(class="btn-check rounded-0", type="radio", name="options5", autocomplete="off", checked)
+                                            label(class="btn-secondary3 border rounded-0 btn", for="one1") 1
+
+                                        div(class="form-check-inline")
+                                            input#two1(class="btn-check  rounded-0", type="radio", name="options5", autocomplete="off")
+                                            label(class="btn-secondary3 border rounded-0 btn", for="two1") 2
+                                        div(class=" form-check-inline")
+                                            input#three1(class="btn-check rounded-0", type="radio", name="options5", autocomplete="off")
+                                            label(class="btn-secondary3 border rounded-0 btn", for="three1") 3
+
+                                        div(class="form-check-inline")
+                                            input#four1(class="btn-check  rounded-0", type="radio", name="options5", autocomplete="off")
+                                            label(class="btn-secondary3 border rounded-0 btn", for="four1") 4
+                                        div(class="form-check-inline")
+                                            input#five1(class="btn-check  rounded-0", type="radio", name="options5", autocomplete="off")
+                                            label(class="btn-secondary3 border rounded-0 btn", for="five1") 5
+                                        div(class="form-check-inline")
+                                            input#six1(class="btn-check  rounded-0", type="radio", name="options5", autocomplete="off")
+                                            label(class="btn-secondary3 border rounded-0 btn", for="six1") 6+
+
+
+                            div(class="")
+                                
+                                label(class="mb-2 ", for="min-price") 
+                                    span(class="me-2") PRICE 
+                                    small EGP
+
+                                div()
+                                    div(class="d-flex gap-3 my-3")
+                                        div(class="input-group")
+
+                                            input#min-price(type="number", class="form-control rounded-0 section-colors_primary", placeholder="Min")
+
+                                        div(class="input-group")
+
+                                            input#max-price(type="number", class="form-control rounded-0 section-colors_primary", placeholder="Max")
+                            div(class="")
+                               
+                                label(class="mb-2 ", for="min-price") 
+                                    span(class="me-2") SQUARE METER
+                                    small M2
+
+                                div(class="   "  )
+                                    div(class="d-flex gap-3 my-3")
+                                        div(class="input-group")
+                                            input#min-meter(type="number", class="form-control rounded-0 section-colors_primary", placeholder="Min")
+                                        div(class="input-group")
+                                            input#max-meter(type="number", class="form-control rounded-0 section-colors_primary", placeholder="Max")
+                            div 
+
+                                h5() FINISHING
+
+                                div(class=" my-3 ")
+                                    div(class="d-flex flex-column ")
+                                        div(class=" form-check-inline")
+                                            input#Not_Finished(class="btn-check rounded-0", type="radio", name="options2", autocomplete="off", checked)
+                                            label(class="btn-secondary2 border rounded-0 scheck", for="Not_Finished")
+                                            label(class="m-2", for="Not_Finished") Not Finished
+                                        div(class="form-check-inline")
+                                            input#Semi_Finished(class="btn-check rounded-0", type="radio", name="options2", autocomplete="off")
+                                            label(class="btn-secondary2 border rounded-0 scheck", for="Semi_Finished")
+                                            label(class="m-2", for="Semi_Finished") Semi Finished
+                                        div(class=" form-check-inline")
+                                            input#Finished(class="btn-check rounded-0", type="radio", name="options2", autocomplete="off", )
+                                            label(class="btn-secondary2 border rounded-0 scheck", for="Finished")
+                                            label(class="m-2", for="Finished") Finished
+                                        div(class="form-check-inline")
+                                            input#Furnished(class="btn-check rounded-0", type="radio", name="options2", autocomplete="off")
+                                            label(class="btn-secondary2 border rounded-0 scheck", for="Furnished")
+                                            label(class="m-2", for="Furnished") Furnished
+                            div 
+                                h5() SALE TYPE
+                                
+                                div(class=" my-3 ")
+                                    div(class="d-flex flex-column  ")
+                                        div(class=" form-check-inline")
+                                            input#Resale(class="btn-check rounded-0", type="radio", name="options3", autocomplete="off", checked)
+                                            label(class="btn-secondary2 border rounded-0 scheck", for="Property")
+                                            label(class="m-2", for="Resale") Resale
+                                        div(class="form-check-inline")
+                                            input#Developer_Sale(class="btn-check rounded-0", type="radio", name="options3", autocomplete="off")
+                                            label(class="btn-secondary2 border rounded-0 scheck", for="Developer_Sale")
+                                            label(class="m-2", for="Developer_Sale") Developer Sale
+
+                        div(class="col-lg-9 col-12  " )
+                            div(class="row")
+                                div(class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1" )
+                                    div(class="   shadow-sm position-relative overflow-hidden")
+                                        a(class="" href="property.html" style="  text-decoration: none;")
+                                            div(class="px-2 mb-2" style="aspect-ratio:16/9")
+                                                img(src="../img/Group 160.png", alt="" width="100%" height="100%" )
+                                            div(class="d-flex gap-2 px-2")
+                                                div(class=" ")
+                                                    img(src="../img/Group 277.png", alt="" width="52" height="52")
+                                                div(class=" text_third")
+                                                    h6 Compound Name
+                                                    div(class="d-flex")
+                                                        i(class="bi bi-geo-alt-fill me-2 text_secondary")
+                                                        p Location
+                                            div(class="d-felx row justify-content-end px-2 ")
+                                                div(class=" text-end col-6 text_third d-flex flex-column ")
+                                                    p(class="mb-0") Starting Price
+                                                    hr(class=" m-0")
+                                                    div(class="d-flex justify-content-end gap-1 h5")
+                                                        p 6,000,000
+                                                        span EGP
+
+                                div(class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1" )
+                                    div(class="   shadow-sm position-relative overflow-hidden")
+                                        a(class="" href="property.html" style="  text-decoration: none;")
+                                            div(class="px-2 mb-2" style="aspect-ratio:16/9")
+                                                img(src="../img/Group 160.png", alt="" width="100%" height="100%" )
+                                            div(class="d-flex gap-2 px-2")
+                                                div(class=" ")
+                                                    img(src="../img/Group 277.png", alt="" width="52" height="52")
+                                                div(class=" text_third")
+                                                    h6 Compound Name
+                                                    div(class="d-flex")
+                                                        i(class="bi bi-geo-alt-fill me-2 text_secondary")
+                                                        p Location
+                                            div(class="d-felx row justify-content-end px-2 ")
+                                                div(class=" text-end col-6 text_third d-flex flex-column ")
+                                                    p(class="mb-0") Starting Price
+                                                    hr(class=" m-0")
+                                                    div(class="d-flex justify-content-end gap-1 h5")
+                                                        p 6,000,000
+                                                        span EGP
+
+                                div(class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1" )
+                                    div(class="   shadow-sm position-relative overflow-hidden")
+                                        a(class="" href="property.html" style="  text-decoration: none;")
+                                            div(class="px-2 mb-2" style="aspect-ratio:16/9")
+                                                img(src="../img/Group 160.png", alt="" width="100%" height="100%" )
+                                            div(class="d-flex gap-2 px-2")
+                                                div(class=" ")
+                                                    img(src="../img/Group 277.png", alt="" width="52" height="52")
+                                                div(class=" text_third")
+                                                    h6 Compound Name
+                                                    div(class="d-flex")
+                                                        i(class="bi bi-geo-alt-fill me-2 text_secondary")
+                                                        p Location
+                                            div(class="d-felx row justify-content-end px-2 ")
+                                                div(class=" text-end col-6 text_third d-flex flex-column ")
+                                                    p(class="mb-0") Starting Price
+                                                    hr(class=" m-0")
+                                                    div(class="d-flex justify-content-end gap-1 h5")
+                                                        p 6,000,000
+                                                        span EGP
+
+                                div(class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1" )
+                                    div(class="   shadow-sm position-relative overflow-hidden")
+                                        a(class="" href="property.html" style="  text-decoration: none;")
+                                            div(class="px-2 mb-2" style="aspect-ratio:16/9")
+                                                img(src="../img/Group 160.png", alt="" width="100%" height="100%" )
+                                            div(class="d-flex gap-2 px-2")
+                                                div(class=" ")
+                                                    img(src="../img/Group 277.png", alt="" width="52" height="52")
+                                                div(class=" text_third")
+                                                    h6 Compound Name
+                                                    div(class="d-flex")
+                                                        i(class="bi bi-geo-alt-fill me-2 text_secondary")
+                                                        p Location
+                                            div(class="d-felx row justify-content-end px-2 ")
+                                                div(class=" text-end col-6 text_third d-flex flex-column ")
+                                                    p(class="mb-0") Starting Price
+                                                    hr(class=" m-0")
+                                                    div(class="d-flex justify-content-end gap-1 h5")
+                                                        p 6,000,000
+                                                        span EGP
+
+                                div(class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1" )
+                                    div(class="   shadow-sm position-relative overflow-hidden")
+                                        a(class="" href="property.html" style="  text-decoration: none;")
+                                            div(class="px-2 mb-2" style="aspect-ratio:16/9")
+                                                img(src="../img/Group 160.png", alt="" width="100%" height="100%" )
+                                            div(class="d-flex gap-2 px-2")
+                                                div(class=" ")
+                                                    img(src="../img/Group 277.png", alt="" width="52" height="52")
+                                                div(class=" text_third")
+                                                    h6 Compound Name
+                                                    div(class="d-flex")
+                                                        i(class="bi bi-geo-alt-fill me-2 text_secondary")
+                                                        p Location
+                                            div(class="d-felx row justify-content-end px-2 ")
+                                                div(class=" text-end col-6 text_third d-flex flex-column ")
+                                                    p(class="mb-0") Starting Price
+                                                    hr(class=" m-0")
+                                                    div(class="d-flex justify-content-end gap-1 h5")
+                                                        p 6,000,000
+                                                        span EGP
+
+                                div(class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1" )
+                                    div(class="   shadow-sm position-relative overflow-hidden")
+                                        a(class="" href="property.html" style="  text-decoration: none;")
+                                            div(class="px-2 mb-2" style="aspect-ratio:16/9")
+                                                img(src="../img/Group 160.png", alt="" width="100%" height="100%" )
+                                            div(class="d-flex gap-2 px-2")
+                                                div(class=" ")
+                                                    img(src="../img/Group 277.png", alt="" width="52" height="52")
+                                                div(class=" text_third")
+                                                    h6 Compound Name
+                                                    div(class="d-flex")
+                                                        i(class="bi bi-geo-alt-fill me-2 text_secondary")
+                                                        p Location
+                                            div(class="d-felx row justify-content-end px-2 ")
+                                                div(class=" text-end col-6 text_third d-flex flex-column ")
+                                                    p(class="mb-0") Starting Price
+                                                    hr(class=" m-0")
+                                                    div(class="d-flex justify-content-end gap-1 h5")
+                                                        p 6,000,000
+                                                        span EGP
+
+                                div(class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1" )
+                                    div(class="   shadow-sm position-relative overflow-hidden")
+                                        a(class="" href="property.html" style="  text-decoration: none;")
+                                            div(class="px-2 mb-2" style="aspect-ratio:16/9")
+                                                img(src="../img/Group 160.png", alt="" width="100%" height="100%" )
+                                            div(class="d-flex gap-2 px-2")
+                                                div(class=" ")
+                                                    img(src="../img/Group 277.png", alt="" width="52" height="52")
+                                                div(class=" text_third")
+                                                    h6 Compound Name
+                                                    div(class="d-flex")
+                                                        i(class="bi bi-geo-alt-fill me-2 text_secondary")
+                                                        p Location
+                                            div(class="d-felx row justify-content-end px-2 ")
+                                                div(class=" text-end col-6 text_third d-flex flex-column ")
+                                                    p(class="mb-0") Starting Price
+                                                    hr(class=" m-0")
+                                                    div(class="d-flex justify-content-end gap-1 h5")
+                                                        p 6,000,000
+                                                        span EGP
+
+                                div(class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1" )
+                                    div(class="   shadow-sm position-relative overflow-hidden")
+                                        a(class="" href="property.html" style="  text-decoration: none;")
+                                            div(class="px-2 mb-2" style="aspect-ratio:16/9")
+                                                img(src="../img/Group 160.png", alt="" width="100%" height="100%" )
+                                            div(class="d-flex gap-2 px-2")
+                                                div(class=" ")
+                                                    img(src="../img/Group 277.png", alt="" width="52" height="52")
+                                                div(class=" text_third")
+                                                    h6 Compound Name
+                                                    div(class="d-flex")
+                                                        i(class="bi bi-geo-alt-fill me-2 text_secondary")
+                                                        p Location
+                                            div(class="d-felx row justify-content-end px-2 ")
+                                                div(class=" text-end col-6 text_third d-flex flex-column ")
+                                                    p(class="mb-0") Starting Price
+                                                    hr(class=" m-0")
+                                                    div(class="d-flex justify-content-end gap-1 h5")
+                                                        p 6,000,000
+                                                        span EGP
+
+                                div(class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1" )
+                                    div(class="   shadow-sm position-relative overflow-hidden")
+                                        a(class="" href="property.html" style="  text-decoration: none;")
+                                            div(class="px-2 mb-2" style="aspect-ratio:16/9")
+                                                img(src="../img/Group 160.png", alt="" width="100%" height="100%" )
+                                            div(class="d-flex gap-2 px-2")
+                                                div(class=" ")
+                                                    img(src="../img/Group 277.png", alt="" width="52" height="52")
+                                                div(class=" text_third")
+                                                    h6 Compound Name
+                                                    div(class="d-flex")
+                                                        i(class="bi bi-geo-alt-fill me-2 text_secondary")
+                                                        p Location
+                                            div(class="d-felx row justify-content-end px-2 ")
+                                                div(class=" text-end col-6 text_third d-flex flex-column ")
+                                                    p(class="mb-0") Starting Price
+                                                    hr(class=" m-0")
+                                                    div(class="d-flex justify-content-end gap-1 h5")
+                                                        p 6,000,000
+                                                        span EGP
+                            div(class="d-flex justify-content-center mt-5")
+                                nav(aria-label="Page navigation example ")
+                                    ul(class="pagination justify-content-center " )
+                                        li(class="page-item ")
+                                            a(class="page-link") Previous
+                                        li(class="page-item " aria-current="page")
+                                            a(class="page-link", href="#") 1
+                                        li(class="page-item active")
+                                            a(class="page-link", href="#") 2
+                                        li(class="page-item")
+                                            a(class="page-link", href="#") 3
+                                        li(class="page-item")
+                                            a(class="page-link", href="#") Next
+
+            div#offcanvasExample(class="offcanvas offcanvas-start section-colors_secondary", tabindex="-1", aria-labelledby="offcanvasExampleLabel")
+                div(class="offcanvas-header")
+                    h5#offcanvasExampleLabel(class="offcanvas-title") Fillter
+                    button(type="button", class="btn-close section-colors_secondary  text-reset text_primary", data-bs-dismiss="offcanvas", aria-label="Close")
+
+                form(class="offcanvas-body section-colors_secondary p-4 mb-5"  action="")
+                        div 
+                            button(class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between "  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" ,   role="button" aria-expanded="false" aria-controls="collapseExample")
+                                h5 FIND
+                                i(class="bi bi-caret-down-fill") 
+                            div(class=" my-3 collapse "  id="collapseExample")
+                                div(class=" form-check-inline")
+                                    input#Property(class="btn-check rounded-0", type="radio", name="options1", autocomplete="off", checked)
+                                    label(class="btn-secondary2 border rounded-0 scheck", for="Property")
+                                    label(class="m-2", for="Property") Property
+                                div(class="form-check-inline")
+                                    input#Compound(class="btn-check rounded-0", type="radio", name="options1", autocomplete="off")
+                                    label(class="btn-secondary2 border rounded-0 scheck", for="Compound")
+                                    label(class="m-2", for="Compound") Compound
+                        div 
+                            button(class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between "  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" ,   role="button" aria-expanded="false" aria-controls="collapseExample3")
+                                h5 PAYMENTS
+                                i(class="bi bi-caret-down-fill")                                        
+                            div(class=" my-3 collapse "  id="collapseExample3")       
+                                div(class=" mb-3   position-relative")
+                                    label(for="input5", class="form-label") Down Payments
+                                    input#input5(type="number",placeholder="Max Amount", class="form-control rounded-0 section-colors_primary px-2 my-3", aria-labelledby="numberHelpBlock")
+                                div(class=" mb-3  position-relative")
+                                    label(for="input6", class="form-label") Monthly Installments
+                                    input#input6(type="number",placeholder="Max Amount", class="form-control rounded-0 section-colors_primary px-2 my-3", aria-labelledby="numberHelpBlock")
+                                div(class=" mb-3   position-relative  w-100 ")
+                                    label(for="property", class="mb-") Years Of Installments
+                                    select(class="form-select  section-colors_primary rounded-0 my-3", aria-label=".form-select example")
+                                        option(selected) 1 year
+                                        option(value="1") One
+                                        option(value="2") Two
+                                        option(value="3") Three
+                        div(class="overflow-auto")
+                            button(class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between "  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" ,   role="button" aria-expanded="false" aria-controls="collapseExample7")
+                                h5() BEDROOMS
+                                i(class="bi bi-caret-down-fill")
+
+                            div(class=" my-3 collapse "  id="collapseExample7")
+                                div(class="d-flex my-3 "  )
+                                    div(class=" form-check-inline")
+                                        input#one(class="btn-check rounded-0", type="radio", name="options4", autocomplete="off", checked)
+                                        label(class="btn-secondary3 border rounded-0 btn", for="one") 1
+
+                                    div(class="form-check-inline")
+                                        input#two(class="btn-check  rounded-0", type="radio", name="options4", autocomplete="off")
+                                        label(class="btn-secondary3 border rounded-0 btn", for="two") 2
+                                    div(class=" form-check-inline")
+                                        input#three(class="btn-check rounded-0", type="radio", name="options4", autocomplete="off")
+                                        label(class="btn-secondary3 border rounded-0 btn", for="three") 3
+
+                                    div(class="form-check-inline")
+                                        input#four(class="btn-check  rounded-0", type="radio", name="options4", autocomplete="off")
+                                        label(class="btn-secondary3 border rounded-0 btn", for="four") 4
+                                    div(class="form-check-inline")
+                                        input#five(class="btn-check  rounded-0", type="radio", name="options4", autocomplete="off")
+                                        label(class="btn-secondary3 border rounded-0 btn", for="five") 5
+                                    div(class="form-check-inline")
+                                        input#six(class="btn-check  rounded-0", type="radio", name="options4", autocomplete="off")
+                                        label(class="btn-secondary3 border rounded-0 btn", for="six") 6+
+                        div(class="overflow-auto")
+                            button(class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between "  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" ,   role="button" aria-expanded="false" aria-controls="collapseExample6")
+                                h5() BATHROOMS
+                                i(class="bi bi-caret-down-fill")
+                            div(class=" my-3 collapse "  id="collapseExample6")
+                                div(class="d-flex my-3")
+                                    div(class=" form-check-inline")
+                                        input#one1(class="btn-check rounded-0", type="radio", name="options5", autocomplete="off", checked)
+                                        label(class="btn-secondary3 border rounded-0 btn", for="one1") 1
+
+                                    div(class="form-check-inline")
+                                        input#two1(class="btn-check  rounded-0", type="radio", name="options5", autocomplete="off")
+                                        label(class="btn-secondary3 border rounded-0 btn", for="two1") 2
+                                    div(class=" form-check-inline")
+                                        input#three1(class="btn-check rounded-0", type="radio", name="options5", autocomplete="off")
+                                        label(class="btn-secondary3 border rounded-0 btn", for="three1") 3
+
+                                    div(class="form-check-inline")
+                                        input#four1(class="btn-check  rounded-0", type="radio", name="options5", autocomplete="off")
+                                        label(class="btn-secondary3 border rounded-0 btn", for="four1") 4
+                                    div(class="form-check-inline")
+                                        input#five1(class="btn-check  rounded-0", type="radio", name="options5", autocomplete="off")
+                                        label(class="btn-secondary3 border rounded-0 btn", for="five1") 5
+                                    div(class="form-check-inline")
+                                        input#six1(class="btn-check  rounded-0", type="radio", name="options5", autocomplete="off")
+                                        label(class="btn-secondary3 border rounded-0 btn", for="six1") 6+
+
+
+                        div(class="")
+                            button(class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between "  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" ,   role="button" aria-expanded="false" aria-controls="collapseExample8")
+                                label(class="mb-2 ", for="min-price") 
+                                    span(class="me-2") PRICE 
+                                    small EGP
+                                i(class="bi bi-caret-down-fill")
+                            div(class="  collapse "  id="collapseExample8")
+                                div(class="d-flex gap-3 my-3")
+                                    div(class="input-group")
+
+                                        input#min-price(type="number", class="form-control rounded-0 section-colors_primary", placeholder="Min")
+
+                                    div(class="input-group")
+
+                                        input#max-price(type="number", class="form-control rounded-0 section-colors_primary", placeholder="Max")
+                        div(class="")
+                            button(class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between "  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9" ,   role="button" aria-expanded="false" aria-controls="collapseExample9")
+                                label(class="mb-2 ", for="min-price") 
+                                    span(class="me-2") SQUARE METER
+                                    small M2
+                                i(class="bi bi-caret-down-fill")
+                            div(class="  collapse "  id="collapseExample9")
+                                div(class="d-flex gap-3 my-3")
+                                    div(class="input-group")
+                                        input#min-meter(type="number", class="form-control rounded-0 section-colors_primary", placeholder="Min")
+                                    div(class="input-group")
+                                        input#max-meter(type="number", class="form-control rounded-0 section-colors_primary", placeholder="Max")
+                        div 
+                            button(class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between "  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" ,   role="button" aria-expanded="false" aria-controls="collapseExample4")
+                                h5() FINISHING
+                                i(class="bi bi-caret-down-fill") 
+                            div(class=" my-3 collapse "  id="collapseExample4")
+                                div(class="d-flex flex-column ")
+                                    div(class=" form-check-inline")
+                                        input#Not_Finished(class="btn-check rounded-0", type="radio", name="options2", autocomplete="off", checked)
+                                        label(class="btn-secondary2 border rounded-0 scheck", for="Not_Finished")
+                                        label(class="m-2", for="Not_Finished") Not Finished
+                                    div(class="form-check-inline")
+                                        input#Semi_Finished(class="btn-check rounded-0", type="radio", name="options2", autocomplete="off")
+                                        label(class="btn-secondary2 border rounded-0 scheck", for="Semi_Finished")
+                                        label(class="m-2", for="Semi_Finished") Semi Finished
+                                    div(class=" form-check-inline")
+                                        input#Finished(class="btn-check rounded-0", type="radio", name="options2", autocomplete="off", )
+                                        label(class="btn-secondary2 border rounded-0 scheck", for="Finished")
+                                        label(class="m-2", for="Finished") Finished
+                                    div(class="form-check-inline")
+                                        input#Furnished(class="btn-check rounded-0", type="radio", name="options2", autocomplete="off")
+                                        label(class="btn-secondary2 border rounded-0 scheck", for="Furnished")
+                                        label(class="m-2", for="Furnished") Furnished
+                        div 
+                            button(class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between "  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" ,   role="button" aria-expanded="false" aria-controls="collapseExample5")
+                                h5() SALE TYPE
+                                i(class="bi bi-caret-down-fill") 
+                            
+                            div(class=" my-3 collapse "  id="collapseExample5")
+                                div(class="d-flex flex-column  ")
+                                    div(class=" form-check-inline")
+                                        input#Resale(class="btn-check rounded-0", type="radio", name="options3", autocomplete="off", checked)
+                                        label(class="btn-secondary2 border rounded-0 scheck", for="Property")
+                                        label(class="m-2", for="Resale") Resale
+                                    div(class="form-check-inline")
+                                        input#Developer_Sale(class="btn-check rounded-0", type="radio", name="options3", autocomplete="off")
+                                        label(class="btn-secondary2 border rounded-0 scheck", for="Developer_Sale")
+                                        label(class="m-2", for="Developer_Sale") Developer Sale
+                        div(class="d-grid section-colors_third mt-3")
+                            button(class="btn  rounded-0", type="submit" style="padding:16px 12px;")
+                                | Search
 
         include components/footer.pug
         include components/side_contact.pug

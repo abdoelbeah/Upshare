@@ -170,8 +170,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 const check1 = document.getElementById('check1');
+
 const option11 = document.getElementById('option11');
 const check2 = document.getElementById('check2');
+
 const option12 = document.getElementById('option12');
 if (check1 && check2 || option11 || option12) {
 
@@ -180,13 +182,14 @@ option11.addEventListener('click', () => {
 
     check1.classList.add('activecheckbox');
     check2.classList.remove('activecheckbox');
+
   
 });
 
 option12.addEventListener('click', () => {
-
     check2.classList.add('activecheckbox');
     check1.classList.remove('activecheckbox');
+
   
 });}
 
@@ -196,10 +199,31 @@ option12.addEventListener('click', () => {
 
 
 
+// $(document).ready(function() {
+//   // When a button is clicked
+//   $('.collapsible-content').on('shown.bs.collapse', function() {
+//     // Hide all other collapsible content
+//     $('.collapsible-content').not(this).collapse('hide');
+//   });
+// });
 
-
-
-
-
+$(document).ready(function() {
+  // When a button is clicked
+  $('.collapsible-btn').click(function() {
+    // Toggle the active class on the button
+    $(this).toggleClass('activebt');
+    // Collapse or expand the associated content
+    var content = $(this).next();
+    if (content.is(':visible')) {
+      content.slideUp('fast');
+    } else {
+      content.slideDown('fast');
+    }
+    // Hide all other collapsible content
+    $('.collapsible-content').not(content).slideUp('fast');
+    // Remove the active class from all other buttons
+    $('.collapsible-btn').not(this).removeClass('activebt');
+  });
+});
 
 

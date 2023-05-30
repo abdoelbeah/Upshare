@@ -1,16 +1,17 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /* font-size: 1rem !important; */
+    font-size: 1rem !important;
     color: #F0F7EE;
 }
 /*colors */
 a:hover{
   color:#87BBA2;
+  text-decoration: none;
 }
 
 .bg_primary{
-  background-color: #0E3840;#0C333A
+  background-color: #0E3840;
 }
 .bg_primary-dark{
   background-color: #0C333A;
@@ -59,13 +60,13 @@ a:hover{
 
 }
 .section-colors_forth:focus{
-
-
     outline: none;
     box-shadow: none;
 
-  
-
+}
+form-control:focus{
+  outline: none;
+  box-shadow: none;
 }
 .section-colors_secondary{
   background-color: #0E3840;
@@ -115,10 +116,31 @@ background-color: #87BBA2;
 border-color: #87BBA2;
 color: #0E3840;
 }
+
+.btn-check:checked + .btn-secondary2 {
+background-color: #F0F7EE;
+border-color: #F0F7EE;
+color: #0E3840;
+}
+.btn-check:checked + .btn-secondary3 {
+  background-color: #F0F7EE;
+  border-color: #F0F7EE;
+  color: #0C333A;
+}
 .btn-secondary {
 background-color: #F0F7EE;
 border-color: #F0F7EE;
 color: #0E3840;
+}
+.btn-secondary2 {
+background-color: transparent;
+border-color: #F0F7EE;
+color: #0E3840;
+}
+.btn-secondary3 {
+background-color: #F0F7EE;
+border-color: #F0F7EE;
+color: #0E384046;
 }
 
 .btn-secondary:hover {
@@ -154,6 +176,11 @@ color: #0E3840;
   position: relative;
 }
 
+.filter_btn:hover{
+  background-color: #0E3840;
+  border-color: #0E3840;
+  color: #F0F7EE;
+}
 /*form and buttons*/
 .btn:focus {
   outline: none;
@@ -178,9 +205,13 @@ font-size: 50px;
     display: none !important;;
 }
 
-
+.section-colors_secondary:hover{
+color:#0C333A
+bacground-color:#87BBA2
+}
 .activecheckbox{
     color: #C76E4E;
+
 }
 
 .select-style{
@@ -220,6 +251,20 @@ font-size: 50px;
 }
 
 
+.form-inputs .form-control:focus{
+  box-shadow:none;
+  border:1px solid #000;
+}
+.form-inputs{
+  position:relative;
+  height: 58px;
+}
+.form-inputs i{
+  position:absolute;
+  right:30px;
+  top:10px;
+  font-size:25px;
+}
 .form-check{
   padding: 0;
   margin-bottom: 20px;
