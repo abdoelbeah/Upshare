@@ -1,0 +1,17 @@
+doctype html
+html(lang="en", dir="ltr")
+    head
+        include components/head.pug
+    body(class="bg_secondary")
+        include components/navbar.pug
+        section()
+            form(action="")
+                div
+                    div(class="input-group")
+                        input(class="form-control rounded-0", type="search")
+                        span(class="input-group-addon")
+                            input(class="btn btn-primary", type="submit", value="Search") 
+
+        include components/footer.pug
+        include components/side_contact.pug
+        script(src="../js/app.js")

@@ -30,9 +30,39 @@ document.addEventListener("DOMContentLoaded", function() {
       },
     },
   });})
+document.addEventListener("DOMContentLoaded", function() {
+  const swiper2 = new Swiper(".swiper-property", {
+    // Optional parameters
+    direction: "horizontal",
+    slidesPerView: 1,
+    spaceBetween: 20,
+  
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  
+    breakpoints: {
+  
+      550: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+  
+  
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1350: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
+  });})
   //swiper logos
   document.addEventListener("DOMContentLoaded", function() {
-  const swiper2 = new Swiper(".swiper-brands", {
+  const swiper3 = new Swiper(".swiper-brands", {
     // Optional parameters
     direction: "horizontal",
     slidesPerView: 4,
@@ -61,9 +91,10 @@ document.addEventListener("DOMContentLoaded", function() {
       },
     },
   });})
-
-
-
+  const scroll_top = document.getElementById('scroll_top');
+  scroll_top.addEventListener('click', () => {
+    $('body,html').animate({scrollTop: 0}, 'fast');
+  })
 //to pass the active class to the current page
   $(document).ready(function() {
     // Get the current URL
@@ -85,22 +116,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     if (!['/contact2.html', '/index.html','/'].some(path => currentPath.endsWith(path))) { // Check if the current page is not the home page or the contact page
-    $('.home_nav').addClass('navbar-scrolled');
-    $('.changesrc').attr('src', '../img/Group 151.png'); // Change the image source to 'new-image.jpg'
-    $('.log').removeClass('text_primary');
-
-    $('.bi-list').removeClass('text_primary');
- 
+      $('.home_nav').addClass('navbar-scrolled');
+      $('.changesrc').attr('src', '../img/Group 151.png'); // Change the image source to 'new-image.jpg'
+      $('.log').removeClass('text_primary');
+      $('.bi-list').removeClass('text_primary');
     }
+
     if (!['/contact.html','/contact2.html','/index.html','/'].some(path => currentPath.endsWith(path))) { // Check if the current page is not the home page or the contact page
 
     $('footer').addClass('section-colors_primary ')
 
     $('footer a').addClass('text_third ')
+    $('.footer_img img').attr('src', '../img/Group 389.png');
     }else{
       $('footer').addClass('bg_primary')
       $('footer a').addClass('text_primary ')
- 
+
+      $('.footer_img img').attr('src', '../img/Group 462.png');
     }
 
 

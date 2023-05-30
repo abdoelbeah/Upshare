@@ -2,7 +2,7 @@ doctype html
 html(lang="en", dir="ltr")
     head
         include components/head.pug
-    body(style="background-color: #F0F7EE;")
+    body(class="bg_secondary")
         include components/navbar.pug
         section(class="container-lg  py-5 mb-5" )
             div(class="position-relative " style="aspect-ratio: 16/9;")
@@ -85,4 +85,5 @@ html(lang="en", dir="ltr")
                             a(class="page-link", href="#") Next
 
         include components/footer.pug
+        include components/side_contact.pug
         script(src="../js/app.js")

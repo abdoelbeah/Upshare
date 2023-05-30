@@ -2,9 +2,9 @@ doctype html
 html(lang="en", dir="ltr")
     head
         include components/head.pug
-    body(style="background-color: #F0F7EE;")
+    body(class="bg_secondary ")
         include components/navbar.pug
-        section(class="container-lg  py-5 mb-5" )
+        section(class="container-lg  py-5 " )
             div(class="position-relative " style="aspect-ratio: 16/9;")
                 img(src="../img/Group 400.png", alt="",width="100%", height="100%")
                 div(class="position-absolute w-100 row p-sm-4 p-1" style="z-index: 5; bottom:0;" )
@@ -13,7 +13,7 @@ html(lang="en", dir="ltr")
                         hr(class=" mb-lg-2 article" )
                         h3(class="m-0 mb-lg-2 article-size2" ) Article Headline 
                         p(class="d-none d-lg-block") Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi in eveniet quis placeat sint eos minus? Illum non deserunt omnis, tempore reprehenderit sequi ab ratione distinctio? Sint odit eveniet neque.
-        section(class="py-5 px-5")
+        section(class="py-5 container-lg ")
             div(class="text_third")
                 p Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dicta asperiores voluptatem dolorum est! Accusantium harum amet illo nemo tempora ut quae, odit laborum libero, eaque deserunt commodi necessitatibus quod.
                 p Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dicta asperiores voluptatem dolorum est! Accusantium harum amet illo nemo tempora ut quae, odit laborum libero, eaque deserunt commodi necessitatibus quod.
@@ -88,4 +88,5 @@ html(lang="en", dir="ltr")
                             a(class="page-link", href="#") Next
 
         include components/footer.pug
+        include components/side_contact.pug
         script(src="../js/app.js")

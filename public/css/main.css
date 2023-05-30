@@ -75,6 +75,14 @@ a:hover{
   background-color: #87BBA2;
   color: #0E3840;
 }
+.side{
+  background-color: #87BBA2;
+  color: #0E3840;
+}
+.side:hover{
+  background-color: #0E3840;
+  color: #87BBA2
+}
 .section-colors_third_dark{
   background-color:#0C333A ;
   color: #F0F7EE;
@@ -112,18 +120,35 @@ background-color: #F0F7EE;
 border-color: #F0F7EE;
 color: #0E3840;
 }
-.btn-contact{
-background-color: transparent;
-border-color: #0E3840;
-color: #0E3840;
-}
 
 .btn-secondary:hover {
   background-color: #F0F7EE;
   border-color: #F0F7EE;
   color: #0E3840;
 }
+.active_btn{
+background-color: #0E3840;
+border-color: #0E3840;
+color: #F0F7EE;
+}
+.btn-third {
+background-color: #87BBA2;
+border-color: #87BBA2;
+color: #0E3840;
+}
 
+.btn-third:hover {
+  background-color: #0E3840;
+  border-color: #0E3840;
+  color: #F0F7EE;
+  min-width: max-content;
+
+}
+.btn-contact{
+background-color: transparent;
+border-color: #0E3840;
+color: #0E3840;
+}
 .collapse  .active{
   color: #87BBA2 !important;
   position: relative;
@@ -337,12 +362,23 @@ cursor: pointer;
   direction: rtl;
   text-align: left;
 }
-
+.brand-absolute{
+   z-index: 5;
+   bottom:0;
+   width:128px;
+   height:128px;
+}
 @media only screen and (max-width: 600px)  {
   body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem !important;
     color: #F0F7EE;
+}
+.brand-absolute{
+  z-index: 5;
+  bottom:0;
+  width:90px;
+  height:90px;
 }
 .select-style{
   font-size: 16px !important;
