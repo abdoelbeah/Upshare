@@ -142,29 +142,39 @@ document.addEventListener("DOMContentLoaded", function() {
       var activeNavLink = $('.nav-item .active');
       
       // Append the .triangle-top class to the active nav link element
-      activeNavLink.append('<span class="triangle-top position-absolute d-none d-lg-block" style="top:30px; right:45% " ></span>');
+      activeNavLink.append('<span class="triangle-top position-absolute d-none d-lg-block" style="top:35px; right:45% " ></span>');
 
 //change the theme on scroll 
 
 
+
+ $(window).scroll(function() {
+            let scrollDistance = $(window).scrollTop();
+            if (scrollDistance >= 500) {       
+              $('#scroll_top').removeClass('d-none');
+         } else {        
+                $('#scroll_top').addClass('d-none');     
+               }
     if ([ '/index.html','/'].some(path => currentPath.endsWith(path))) {
-    $(window).scroll(function() {
-      let scrollDistance = $(window).scrollTop();
+
+
       // Show/hide menu on scroll
         if (scrollDistance >= 500) {
           $('.home_nav').addClass('navbar-scrolled');
           $('.changesrc').attr('src', '../img/Group 151.png'); // Change the image source to 'new-image.jpg'
           $('.log').removeClass('text_primary');
           $('.bi-list').removeClass('text_primary');
+
           } else {
           $('.home_nav').removeClass('navbar-scrolled');
           $('.changesrc').attr('src', '../img/Group 11.png'); // Change the image source back to 'original-image.jpg'
           $('.log').addClass('text_primary');
           $('.bi-list').addClass('text_primary');
+
         }
-        });
-      }
-    });
+        
+      }});});
+   
 
 
 

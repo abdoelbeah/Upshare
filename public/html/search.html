@@ -25,7 +25,7 @@
         <button class="navbar-toggler text_third flex-grow-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="bi bi-list text_primary"></span></button>
         <div class="collapse navbar-collapse d-lg-flex gap-lg-5 justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
             <li class="nav-item"><a class="nav-link" href="search.html">SEARCH</a></li>
             <li class="nav-item"><a class="nav-link" href="articles.html">ARTICLES</a></li>
@@ -92,7 +92,9 @@
               </div>
             </div>
             <div>
-              <label class="mb-2 " for="min-price"> <span class="me-2">PRICE </span><small>EGP</small></label>
+              <label class="mb-2 d-flex align-items-center" for="min-price"> 
+                <h5 class="me-2 mb-0">PRICE </h5><small>EGP</small>
+              </label>
               <div>
                 <div class="d-flex gap-3 my-3">
                   <div class="input-group">
@@ -105,7 +107,9 @@
               </div>
             </div>
             <div>
-              <label class="mb-2 " for="min-price"> <span class="me-2">SQUARE METER</span><small>M2</small></label>
+              <label class="mb-2 d-flex align-items-center" for="min-meter"> 
+                <h5 class="me-2 mb-0">SQUARE METER</h5><small>M2</small>
+              </label>
               <div class="   ">
                 <div class="d-flex gap-3 my-3">
                   <div class="input-group">
@@ -117,9 +121,9 @@
                 </div>
               </div>
             </div>
-            <div class="overflow-auto">
+            <div>
               <h5>BEDROOMS</h5>
-              <div class=" my-3  ">
+              <div class=" my-3  overflow-auto">
                 <div class="d-flex my-3">
                   <div class=" form-check-inline d-flex justify-content-center align-items-center numberbtn-size">
                     <input class="btn-check rounded-0" id="one" type="radio" name="options4" autocomplete="off" checked>
@@ -148,9 +152,9 @@
                 </div>
               </div>
             </div>
-            <div class="overflow-auto">
+            <div>
               <h5>BATHROOMS</h5>
-              <div class=" my-3 ">
+              <div class=" my-3 overflow-auto">
                 <div class="d-flex my-3">
                   <div class=" form-check-inline">
                     <input class="btn-check rounded-0" id="one1" type="radio" name="options5" autocomplete="off" checked>
@@ -820,9 +824,9 @@
       <div class="d-lg-flex justify-content-end  w-50 d-none position-absolute footer_img" style="right:0;bottom:0;z-index:5;"><img src="../img/Group 389.png" alt="" width="100%" height="100%"></div>
     </footer>
     <div class="position-fixed d-flex flex-column gap-2 p-3 pb-4 align-items-center" style="right:0;bottom:0;z-index:50"><a href="#">
-        <div class="rounded-pill side d-flex  justify-content-center align-items-center" style="box-shadow: 0px 0px 20px #23418f1a; width:60px; height:60px;"><i class="bi bi-telephone-fill " style="font-size:30px"></i></div></a><a href="#">
-        <div class="rounded-pill side d-flex  justify-content-center align-items-center" style="box-shadow: 0px 0px 20px #23418f1a; width:60px; height:60px;"><i class="bi bi-whatsapp " style="font-size:30px"></i></div></a>
-      <div class="d-flex  justify-content-center align-items-center rounded-pill side" id="scroll_top" style="box-shadow: 0px 0px 20px #23418f1a; width:30px; height:30px;"><i class="fa-solid fa-angle-up"></i></div>
+        <div class="rounded-pill  d-flex  justify-content-center align-items-center whatsapp_colors icon_size" style="box-shadow: 0px 0px 20px #23418f1a; "><i class="bi bi-whatsapp "></i></div></a><a href="#">
+        <div class="rounded-pill side d-flex  justify-content-center align-items-center icon_size" style="box-shadow: 0px 0px 20px #23418f1a; "><i class="bi bi-telephone-fill "></i></div></a>
+      <div class="d-flex  justify-content-center align-items-center rounded-pill side d-none" id="scroll_top" style="box-shadow: 0px 0px 20px #23418f1a; width:30px; height:30px;"><i class="fa-solid fa-angle-up"></i></div>
     </div>
     <script src="../js/app.js"></script>
   </body>

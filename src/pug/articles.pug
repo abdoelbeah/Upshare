@@ -4,7 +4,7 @@ html(lang="en", dir="ltr")
         include components/head.pug
     body(class="bg_secondary")
         include components/navbar.pug
-        section(class="container-lg  py-5 mb-5" )
+        section(class="container-project py-3 py-lg-5" )
             div(class="position-relative " style="aspect-ratio: 16/9;")
                 img(src="../img/Group 400.png", alt="",width="100%", height="100%")
                 div(class="position-absolute w-100 row p-sm-4 p-1" style="z-index: 5; bottom:0;" )
@@ -12,77 +12,88 @@ html(lang="en", dir="ltr")
                         h1(class="m-0 mb-lg-2 article-size1" ) Article Title 
                         hr(class=" mb-lg-2 article" )
                         h3(class="m-0 mb-lg-2 article-size2" ) Article Headline 
-                        p(class="d-none d-lg-block") Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi in eveniet quis placeat sint eos minus? Illum non deserunt omnis, tempore reprehenderit sequi ab ratione distinctio? Sint odit eveniet neque.
+                        p(class="d-none d-lg-block" style="max-width:451.63px") Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi in eveniet quis placeat sint eos minus? Illum non deserunt omnis, tempore reprehenderit sequi ab ratione distinctio? Sint odit eveniet neque.
                 div(class=" w-100  p-sm-4 p-1 read" )
                     button(class="btn ")
                         a(href="article.html", class="text_secondary ")
                             i(class="bi bi-caret-right-fill ")
                             | Read more
 
-        section(class="section-colors_primary ")
+        section(class="section-colors_primary py-5")
             div(class="  d-flex justify-content-center align-items-center container-fluid mb-5 latest", )
                 div( class="position-relative" style="z-index: 5;")
                     div(class="triangle-topright position-absolute"  )
-                    span(class="h3 py-5 text-center", style="padding: 0 20px;") LATEST ARTICLES
-                    p(class="h6 py-3 text-center mb-0", ) Our most recent articles
+                    span(class="article-size1 py-5 text-center", style="padding: 0 20px;") LATEST ARTICLES
+                    p(class=" article-size2 py-3 text-center mb-0", ) Our most recent articles
                     hr(class="m-0")
                 div(class="d-lg-flex justify-content-end w-50 h-100 d-none position-absolute" style="right:0" )
                     img(src="../img/Group 515.png", alt="", width="100%", height="100%")
 
             div(class="")
-                div(class="row px-lg-5 px-2 mx-auto pb-3" , lazy="true")
+                div(class="row px-lg-5 px-2 mx-auto  pb-3" , lazy="true")
                     div(class=" col-lg-4 col-sm-6 col-12" style="aspect-ratio:1;")
                         div(class="w-100  position-relative overflow-hidden" style="aspect-ratio:1;")
-                            a(class="overflow-hidden swiper-img w-100 ", href="article.html" style="aspect-ratio:1;")
+                            a(class="overflow-hidden swiper-img w-100 swiper-title ", href="article.html" style="aspect-ratio:1;")
                                 img(class="overflow-hidden", style="z-index: 10;overflow: hidden; ", src=" ../img/Group 411.png", height="100%", width="100%", alt="", loading="lazy")
-                                div(class="position-absolute bottom-0 text-center text_primary container w-100 swiper-title")
-                                    h5(class="mb-0 ") PROJECT 
-                                    
-                                    p(class="m-0 border-top w-50 mx-auto ") DEVELOPER 
-                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
-                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 100px ; height: 100px; position: relative;")
-                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 50px ; height: 50px; z-index: 2;")
-                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 20px;")
-                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
-                    div(class=" col-lg-4 col-sm-6 col-12" style="aspect-ratio:1;")
-                        div(class="w-100  position-relative overflow-hidden" style="aspect-ratio:1;")
-                            a(class="overflow-hidden swiper-img w-100 ", href="article.html" style="aspect-ratio:1;")
-                                img(class="overflow-hidden", style="z-index: 10;overflow: hidden; ", src=" ../img/Group 411.png", height="100%", width="100%", alt="", loading="lazy")
-                                div(class="position-absolute bottom-0 text-center text_primary  container  swiper-title" )
-                                    h5(class="mb-0") PROJECT NAME
-                                    
-                                    p(class="m-0 border-top w-50 mx-auto") DEVELOPER
-                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
-                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 100px ; height: 100px; position: relative;")
-                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 50px ; height: 50px; z-index: 2;")
-                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 20px;")
-                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
-                    div(class=" col-lg-4 col-sm-6 col-12" style="aspect-ratio:1;")
-                        div(class="w-100  position-relative overflow-hidden" style="aspect-ratio:1;")
-                            a(class="overflow-hidden swiper-img w-100 ", href="article.html" style="aspect-ratio:1;")
-                                img(class="overflow-hidden", style="z-index: 10;overflow: hidden; ", src=" ../img/Group 411.png", height="100%", width="100%", alt="", loading="lazy")
-                                div(class="position-absolute bottom-0 text-center text_primary container  swiper-title")
-                                    h5(class="mb-0") PROJECT NAME
-                                    
-                                    p(class="m-0 border-top w-50 mx-auto") DEVELOPER
-                                div(class="hover-effect position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
-                                    div(class="  rounded-pill d-flex justify-content-center align-items-center ", style="width: 100px ; height: 100px; position: relative;")
-                                        div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 50px ; height: 50px; z-index: 2;")
-                                            i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 20px;")
-                                        div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
 
+                                div(class=" position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="position-absolute bottom-0 text-center  container w-100 ")
+                                        h5(class="mb-0 ") PROJECT 
+                                        p(class="m-0 border-top w-50 mx-auto ") DEVELOPER 
+                                    div(class="hover-effect w-100 h-100  d-flex justify-content-center align-items-center")
+                                        div(class=" rounded-pill d-flex justify-content-center align-items-center ", style="width: 100px ; height: 100px; position: relative;")
+                                            div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 50px ; height: 50px; z-index: 2;")
+                                                i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 20px;")
+                                            div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class=" col-lg-4 col-sm-6 col-12" style="aspect-ratio:1;")
+                        div(class="w-100  position-relative overflow-hidden" style="aspect-ratio:1;")
+                            a(class="overflow-hidden swiper-img w-100 swiper-title ", href="article.html" style="aspect-ratio:1;")
+                                img(class="overflow-hidden", style="z-index: 10;overflow: hidden; ", src=" ../img/Group 411.png", height="100%", width="100%", alt="", loading="lazy")
+
+                                div(class=" position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="position-absolute bottom-0 text-center  container w-100 ")
+                                        h5(class="mb-0 ") PROJECT 
+                                        p(class="m-0 border-top w-50 mx-auto ") DEVELOPER 
+                                    div(class="hover-effect w-100 h-100  d-flex justify-content-center align-items-center")
+                                        div(class=" rounded-pill d-flex justify-content-center align-items-center ", style="width: 100px ; height: 100px; position: relative;")
+                                            div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 50px ; height: 50px; z-index: 2;")
+                                                i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 20px;")
+                                            div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
+                    div(class=" col-lg-4 col-sm-6 col-12" style="aspect-ratio:1;")
+                        div(class="w-100  position-relative overflow-hidden" style="aspect-ratio:1;")
+                            a(class="overflow-hidden swiper-img w-100 swiper-title ", href="article.html" style="aspect-ratio:1;")
+                                img(class="overflow-hidden", style="z-index: 10;overflow: hidden; ", src=" ../img/Group 411.png", height="100%", width="100%", alt="", loading="lazy")
+                                div(class=" position-absolute top-0 w-100 h-100 d-flex justify-content-center align-items-center")
+                                    div(class="position-absolute bottom-0 text-center  container w-100 ")
+                                        h5(class="mb-0 ") PROJECT 
+                                        p(class="m-0 border-top w-50 mx-auto ") DEVELOPER 
+                                    div(class="hover-effect w-100 h-100  d-flex justify-content-center align-items-center")
+                                        div(class=" rounded-pill d-flex justify-content-center align-items-center ", style="width: 100px ; height: 100px; position: relative;")
+                                            div(class=" bg_primary rounded-pill d-flex justify-content-center align-items-center ", style="width: 50px ; height: 50px; z-index: 2;")
+                                                i(class="fa-solid fa-magnifying-glass-plus text_primary", style="font-size: 20px;")
+                                            div(class="position-absolute bg_primary rounded-pill  w-100 h-100 opacity-75")
                 nav(aria-label="Page navigation example ")
                     ul(class="pagination justify-content-center " )
                         li(class="page-item ")
-                            a(class="page-link") Previous
+                            a(class="page-link") 
+                                i(class="bi bi-caret-left-fill me-2")
+                                span Previous
+
                         li(class="page-item " aria-current="page")
                             a(class="page-link", href="#") 1
                         li(class="page-item active")
                             a(class="page-link", href="#") 2
                         li(class="page-item")
                             a(class="page-link", href="#") 3
+                        li(class="page-item ")
+                            a(class="page-link", href="#") 4
                         li(class="page-item")
-                            a(class="page-link", href="#") Next
+                            a(class="page-link", href="#") 5
+                        li(class="page-item")
+                            a(class="page-link", href="#") 
+                                span(class="me-2") Next
+                                i(class="bi bi-caret-right-fill")
+
 
         include components/footer.pug
         include components/side_contact.pug

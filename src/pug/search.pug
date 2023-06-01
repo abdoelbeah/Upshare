@@ -51,8 +51,8 @@ html(lang="en", dir="ltr")
                                         option(value="3") Three
                         div(class="")
                             
-                            label(class="mb-2 ", for="min-price") 
-                                span(class="me-2") PRICE 
+                            label(class="mb-2 d-flex align-items-center", for="min-price") 
+                                h5(class="me-2 mb-0") PRICE 
                                 small EGP
 
                             div()
@@ -66,8 +66,8 @@ html(lang="en", dir="ltr")
                                         input#max-price(type="number", class="form-control rounded-0 section-colors_primary width-input mx-2", placeholder="Max")
                         div(class="")
                             
-                            label(class="mb-2 ", for="min-price") 
-                                span(class="me-2") SQUARE METER
+                            label(class="mb-2 d-flex align-items-center", for="min-meter") 
+                                h5(class="me-2 mb-0") SQUARE METER
                                 small M2
 
                             div(class="   "  )
@@ -77,9 +77,9 @@ html(lang="en", dir="ltr")
                                     div(class="input-group")
                                         input#max-meter(type="number", class="form-control rounded-0 section-colors_primary width-input mx-2", placeholder="Max")
                        
-                        div(class="overflow-auto")
+                        div(class="")
                             h5() BEDROOMS
-                            div(class=" my-3  "  )
+                            div(class=" my-3  overflow-auto"  )
                                 div(class="d-flex my-3"  )
                                     div(class=" form-check-inline d-flex justify-content-center align-items-center numberbtn-size" )
                                         input#one(class="btn-check rounded-0", type="radio", name="options4", autocomplete="off", checked)
@@ -106,11 +106,11 @@ html(lang="en", dir="ltr")
                                         label(class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size", for="six",) 
                                             span 6+
                         
-                        div(class="overflow-auto")
+                        div(class="")
                             
                             h5() BATHROOMS
 
-                            div(class=" my-3 "  )
+                            div(class=" my-3 overflow-auto"  )
                                 div(class="d-flex my-3")
                                     div(class=" form-check-inline")
                                         input#one1(class="btn-check rounded-0", type="radio", name="options5", autocomplete="off", checked)
