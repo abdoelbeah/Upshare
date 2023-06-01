@@ -31,28 +31,27 @@
             <li class="nav-item"><a class="nav-link" href="articles.html">ARTICLES</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
           </ul>
-          <div class="d-lg-flex justify-content-between ">
-            <button class="btn me-2 log text_primary" type="button"><i class="bi bi-person me-2"></i><span>LOG IN</span></button>
-            <button class="btn text-red" type="button">En/ع</button>
+          <div class="d-lg-flex justify-content-between "><a class="btn me-2 log text_primary normal_text" type="button"><i class="bi bi-person me-2"></i><span>LOG IN</span></a>
+            <button class="btn text-red normal_text" type="button">En/ع</button>
           </div>
         </div>
       </div>
     </nav>
-    <section class="px-2 px-lg-5 py-5">
+    <section class="container-project container-project-y">
       <form action="">
         <div class="row ">
-          <div class="col-9 col-lg-9 d-flex form-inputs rounded-0 px-1">
+          <div class="col-9 col-lg-9 d-flex form-inputs rounded-0 ">
             <input class="form-control rounded-0 section-colors_primary shadow-sm" type="text" placeholder="Search"><i class="bi bi-search text_third"></i>
           </div>
           <div class="col-5 col-lg-3 mt-lg-0  justify-content-end d-none d-lg-flex ">
             <button class="btn section-colors_secondary rounded-0  p-3  w-100 d-flex justify-content-between filter_btn gap-2"><span>filters</span><i class="bi bi-sliders "></i></button>
           </div>
-          <div class="col-3 col-lg-3 mt-lg-0  justify-content-end d-flex d-lg-none px-1">
-            <button class="btn section-colors_secondary rounded-0  px-2 py-3  w-100 d-flex justify-content-between filter_btn gap-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><span>filters</span><i class="bi bi-sliders "></i></button>
+          <div class="col-3 col-lg-3 mt-lg-0  justify-content-end d-flex d-lg-none ">
+            <button class="btn section-colors_secondary rounded-0  px-2 py-3  w-100 d-flex justify-content-sm-between justify-content-center filter_btn gap-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><span class="d-none d-sm-block">filters</span><i class="bi bi-sliders "></i></button>
           </div>
         </div>
-        <div class="row pt-5">
-          <div class="col-lg-3 col-12 section-colors_secondary p-4 mb-5 d-none d-lg-block" style="height:max-content">
+        <div class=" pt-5 justify-content-between " style="  display: flex; gap:3%;">
+          <div class=" section-colors_secondary  mb-5 d-none d-lg-block " style="height:max-content ; width:23%;  ; padding:1.8%;">
             <div> 
               <h5>FIND</h5>
               <div class=" my-3  ">
@@ -70,18 +69,20 @@
             </div>
             <div> 
               <h5>PAYMENTS</h5>
-              <div class=" my-3  px-2">      
-                <div class=" mb-3   position-relative">
-                  <label class="form-label" for="input5">Down Payments</label>
-                  <input class="form-control rounded-0 section-colors_primary px-2 my-3" id="input5" type="number" placeholder="Max Amount" aria-labelledby="numberHelpBlock">
+              <div class=" my-3  ">      
+                <div class=" mb-3 mx-1  position-relative">
+                  <label class="form-label main_text" for="input5">Down Payments</label>
+                  <div>
+                    <input class="form-control rounded-0 section-colors_primary px-2 my-3 mx-2 " id="input5" type="number" placeholder="Max Amount" aria-labelledby="numberHelpBlock" style="max-width:233px">
+                  </div>
                 </div>
-                <div class=" mb-3  position-relative">
-                  <label class="form-label" for="input6">Monthly Installments</label>
-                  <input class="form-control rounded-0 section-colors_primary px-2 my-3" id="input6" type="number" placeholder="Max Amount" aria-labelledby="numberHelpBlock">
+                <div class=" mb-3 mx-1 position-relative">
+                  <label class="form-label main_text" for="input6">Monthly Installments</label>
+                  <input class="form-control rounded-0 section-colors_primary px-2 my-3 mx-2" id="input6" type="number" placeholder="Max Amount" aria-labelledby="numberHelpBlock" style="max-width:233px">
                 </div>
-                <div class=" mb-3   position-relative  w-100 ">
-                  <label class="mb-" for="property">Years Of Installments</label>
-                  <select class="form-select  section-colors_primary rounded-0 my-3" aria-label=".form-select example">
+                <div class=" mb-3 mx-1  position-relative  ">
+                  <label class="main_text" for="property">Years Of Installments</label>
+                  <select class="form-select  section-colors_primary rounded-0 my-3 mx-2" aria-label=".form-select example " style="max-width:233px">
                     <option selected>1 year</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -90,33 +91,59 @@
                 </div>
               </div>
             </div>
+            <div>
+              <label class="mb-2 " for="min-price"> <span class="me-2">PRICE </span><small>EGP</small></label>
+              <div>
+                <div class="d-flex gap-3 my-3">
+                  <div class="input-group">
+                    <input class="form-control rounded-0 section-colors_primary width-input mx-2" id="min-price" type="number" placeholder="Min">
+                  </div>
+                  <div class="input-group">
+                    <input class="form-control rounded-0 section-colors_primary width-input mx-2" id="max-price" type="number" placeholder="Max">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label class="mb-2 " for="min-price"> <span class="me-2">SQUARE METER</span><small>M2</small></label>
+              <div class="   ">
+                <div class="d-flex gap-3 my-3">
+                  <div class="input-group">
+                    <input class="form-control rounded-0 section-colors_primary width-input mx-2" id="min-meter" type="number" placeholder="Min">
+                  </div>
+                  <div class="input-group">
+                    <input class="form-control rounded-0 section-colors_primary width-input mx-2" id="max-meter" type="number" placeholder="Max">
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="overflow-auto">
               <h5>BEDROOMS</h5>
               <div class=" my-3  ">
-                <div class="d-flex my-3 ">
-                  <div class=" form-check-inline">
+                <div class="d-flex my-3">
+                  <div class=" form-check-inline d-flex justify-content-center align-items-center numberbtn-size">
                     <input class="btn-check rounded-0" id="one" type="radio" name="options4" autocomplete="off" checked>
-                    <label class="btn-secondary3 border rounded-0 btn" for="one">1</label>
+                    <label class="btn-secondary3 border rounded-0  d-flex justify-content-center align-items-center numberbtn-size " for="one"> <span>1</span></label>
                   </div>
                   <div class="form-check-inline">
                     <input class="btn-check  rounded-0" id="two" type="radio" name="options4" autocomplete="off">
-                    <label class="btn-secondary3 border rounded-0 btn" for="two">2</label>
+                    <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="two"> <span>2</span></label>
                   </div>
                   <div class=" form-check-inline">
                     <input class="btn-check rounded-0" id="three" type="radio" name="options4" autocomplete="off">
-                    <label class="btn-secondary3 border rounded-0 btn" for="three">3</label>
+                    <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="three"> <span>3</span></label>
                   </div>
                   <div class="form-check-inline">
                     <input class="btn-check  rounded-0" id="four" type="radio" name="options4" autocomplete="off">
-                    <label class="btn-secondary3 border rounded-0 btn" for="four">4</label>
+                    <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="four"> <span>4</span></label>
                   </div>
                   <div class="form-check-inline">
                     <input class="btn-check  rounded-0" id="five" type="radio" name="options4" autocomplete="off">
-                    <label class="btn-secondary3 border rounded-0 btn" for="five">5</label>
+                    <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="five"><span>5</span></label>
                   </div>
                   <div class="form-check-inline">
                     <input class="btn-check  rounded-0" id="six" type="radio" name="options4" autocomplete="off">
-                    <label class="btn-secondary3 border rounded-0 btn" for="six">6+</label>
+                    <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="six"> <span>6+</span></label>
                   </div>
                 </div>
               </div>
@@ -127,53 +154,27 @@
                 <div class="d-flex my-3">
                   <div class=" form-check-inline">
                     <input class="btn-check rounded-0" id="one1" type="radio" name="options5" autocomplete="off" checked>
-                    <label class="btn-secondary3 border rounded-0 btn" for="one1">1</label>
+                    <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size numberbtn-size" for="one1"><span>1</span></label>
                   </div>
                   <div class="form-check-inline">
                     <input class="btn-check  rounded-0" id="two1" type="radio" name="options5" autocomplete="off">
-                    <label class="btn-secondary3 border rounded-0 btn" for="two1">2</label>
+                    <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="two1"> <span>2</span></label>
                   </div>
                   <div class=" form-check-inline">
                     <input class="btn-check rounded-0" id="three1" type="radio" name="options5" autocomplete="off">
-                    <label class="btn-secondary3 border rounded-0 btn" for="three1">3</label>
+                    <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="three1"> <span>3</span></label>
                   </div>
                   <div class="form-check-inline">
                     <input class="btn-check  rounded-0" id="four1" type="radio" name="options5" autocomplete="off">
-                    <label class="btn-secondary3 border rounded-0 btn" for="four1">4</label>
+                    <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="four1"><span>4</span></label>
                   </div>
                   <div class="form-check-inline">
                     <input class="btn-check  rounded-0" id="five1" type="radio" name="options5" autocomplete="off">
-                    <label class="btn-secondary3 border rounded-0 btn" for="five1">5</label>
+                    <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="five1"> <span>5</span></label>
                   </div>
                   <div class="form-check-inline">
                     <input class="btn-check  rounded-0" id="six1" type="radio" name="options5" autocomplete="off">
-                    <label class="btn-secondary3 border rounded-0 btn" for="six1">6+</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <label class="mb-2 " for="min-price"> <span class="me-2">PRICE </span><small>EGP</small></label>
-              <div>
-                <div class="d-flex gap-3 my-3">
-                  <div class="input-group">
-                    <input class="form-control rounded-0 section-colors_primary" id="min-price" type="number" placeholder="Min">
-                  </div>
-                  <div class="input-group">
-                    <input class="form-control rounded-0 section-colors_primary" id="max-price" type="number" placeholder="Max">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <label class="mb-2 " for="min-price"> <span class="me-2">SQUARE METER</span><small>M2</small></label>
-              <div class="   ">
-                <div class="d-flex gap-3 my-3">
-                  <div class="input-group">
-                    <input class="form-control rounded-0 section-colors_primary" id="min-meter" type="number" placeholder="Min">
-                  </div>
-                  <div class="input-group">
-                    <input class="form-control rounded-0 section-colors_primary" id="max-meter" type="number" placeholder="Max">
+                    <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="six1"> <span>6+</span></label>
                   </div>
                 </div>
               </div>
@@ -223,202 +224,349 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-9 col-12  ">
-            <div class="row">
-              <div class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1">
-                <div class="   shadow-sm position-relative overflow-hidden"><a href="property.html" style="  text-decoration: none;">
-                    <div class="px-2 mb-2" style="aspect-ratio:16/9"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
-                    <div class="d-flex gap-2 px-2">
+          <div class="  p-0 " style="  width:74%;flex-grow:8">
+            <div class=" grid_property " style=" ">
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
                       <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
                       <div class=" text_third">
-                        <h6>Compound Name</h6>
-                        <div class="d-flex"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
-                          <p>Location</p>
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
                         </div>
                       </div>
                     </div>
-                    <div class="d-felx row justify-content-end px-2 ">
+                    <div class="d-felx row justify-content-end px-0 ">
                       <div class=" text-end col-6 text_third d-flex flex-column ">
-                        <p class="mb-0">Starting Price</p>
+                        <p class="mb-0 small_text">Starting Price</p>
                         <hr class=" m-0">
                         <div class="d-flex justify-content-end gap-1 h5">
-                          <p>6,000,000</p><span>EGP</span>
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
                         </div>
                       </div>
                     </div></a></div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1">
-                <div class="   shadow-sm position-relative overflow-hidden"><a href="property.html" style="  text-decoration: none;">
-                    <div class="px-2 mb-2" style="aspect-ratio:16/9"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
-                    <div class="d-flex gap-2 px-2">
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
                       <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
                       <div class=" text_third">
-                        <h6>Compound Name</h6>
-                        <div class="d-flex"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
-                          <p>Location</p>
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
                         </div>
                       </div>
                     </div>
-                    <div class="d-felx row justify-content-end px-2 ">
+                    <div class="d-felx row justify-content-end px-0 ">
                       <div class=" text-end col-6 text_third d-flex flex-column ">
-                        <p class="mb-0">Starting Price</p>
+                        <p class="mb-0 small_text">Starting Price</p>
                         <hr class=" m-0">
                         <div class="d-flex justify-content-end gap-1 h5">
-                          <p>6,000,000</p><span>EGP</span>
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
                         </div>
                       </div>
                     </div></a></div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1">
-                <div class="   shadow-sm position-relative overflow-hidden"><a href="property.html" style="  text-decoration: none;">
-                    <div class="px-2 mb-2" style="aspect-ratio:16/9"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
-                    <div class="d-flex gap-2 px-2">
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
                       <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
                       <div class=" text_third">
-                        <h6>Compound Name</h6>
-                        <div class="d-flex"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
-                          <p>Location</p>
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
                         </div>
                       </div>
                     </div>
-                    <div class="d-felx row justify-content-end px-2 ">
+                    <div class="d-felx row justify-content-end px-0 ">
                       <div class=" text-end col-6 text_third d-flex flex-column ">
-                        <p class="mb-0">Starting Price</p>
+                        <p class="mb-0 small_text">Starting Price</p>
                         <hr class=" m-0">
                         <div class="d-flex justify-content-end gap-1 h5">
-                          <p>6,000,000</p><span>EGP</span>
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
                         </div>
                       </div>
                     </div></a></div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1">
-                <div class="   shadow-sm position-relative overflow-hidden"><a href="property.html" style="  text-decoration: none;">
-                    <div class="px-2 mb-2" style="aspect-ratio:16/9"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
-                    <div class="d-flex gap-2 px-2">
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
                       <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
                       <div class=" text_third">
-                        <h6>Compound Name</h6>
-                        <div class="d-flex"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
-                          <p>Location</p>
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
                         </div>
                       </div>
                     </div>
-                    <div class="d-felx row justify-content-end px-2 ">
+                    <div class="d-felx row justify-content-end px-0 ">
                       <div class=" text-end col-6 text_third d-flex flex-column ">
-                        <p class="mb-0">Starting Price</p>
+                        <p class="mb-0 small_text">Starting Price</p>
                         <hr class=" m-0">
                         <div class="d-flex justify-content-end gap-1 h5">
-                          <p>6,000,000</p><span>EGP</span>
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
                         </div>
                       </div>
                     </div></a></div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1">
-                <div class="   shadow-sm position-relative overflow-hidden"><a href="property.html" style="  text-decoration: none;">
-                    <div class="px-2 mb-2" style="aspect-ratio:16/9"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
-                    <div class="d-flex gap-2 px-2">
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
                       <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
                       <div class=" text_third">
-                        <h6>Compound Name</h6>
-                        <div class="d-flex"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
-                          <p>Location</p>
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
                         </div>
                       </div>
                     </div>
-                    <div class="d-felx row justify-content-end px-2 ">
+                    <div class="d-felx row justify-content-end px-0 ">
                       <div class=" text-end col-6 text_third d-flex flex-column ">
-                        <p class="mb-0">Starting Price</p>
+                        <p class="mb-0 small_text">Starting Price</p>
                         <hr class=" m-0">
                         <div class="d-flex justify-content-end gap-1 h5">
-                          <p>6,000,000</p><span>EGP</span>
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
                         </div>
                       </div>
                     </div></a></div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1">
-                <div class="   shadow-sm position-relative overflow-hidden"><a href="property.html" style="  text-decoration: none;">
-                    <div class="px-2 mb-2" style="aspect-ratio:16/9"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
-                    <div class="d-flex gap-2 px-2">
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
                       <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
                       <div class=" text_third">
-                        <h6>Compound Name</h6>
-                        <div class="d-flex"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
-                          <p>Location</p>
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
                         </div>
                       </div>
                     </div>
-                    <div class="d-felx row justify-content-end px-2 ">
+                    <div class="d-felx row justify-content-end px-0 ">
                       <div class=" text-end col-6 text_third d-flex flex-column ">
-                        <p class="mb-0">Starting Price</p>
+                        <p class="mb-0 small_text">Starting Price</p>
                         <hr class=" m-0">
                         <div class="d-flex justify-content-end gap-1 h5">
-                          <p>6,000,000</p><span>EGP</span>
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
                         </div>
                       </div>
                     </div></a></div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1">
-                <div class="   shadow-sm position-relative overflow-hidden"><a href="property.html" style="  text-decoration: none;">
-                    <div class="px-2 mb-2" style="aspect-ratio:16/9"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
-                    <div class="d-flex gap-2 px-2">
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
                       <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
                       <div class=" text_third">
-                        <h6>Compound Name</h6>
-                        <div class="d-flex"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
-                          <p>Location</p>
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
                         </div>
                       </div>
                     </div>
-                    <div class="d-felx row justify-content-end px-2 ">
+                    <div class="d-felx row justify-content-end px-0 ">
                       <div class=" text-end col-6 text_third d-flex flex-column ">
-                        <p class="mb-0">Starting Price</p>
+                        <p class="mb-0 small_text">Starting Price</p>
                         <hr class=" m-0">
                         <div class="d-flex justify-content-end gap-1 h5">
-                          <p>6,000,000</p><span>EGP</span>
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
                         </div>
                       </div>
                     </div></a></div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1">
-                <div class="   shadow-sm position-relative overflow-hidden"><a href="property.html" style="  text-decoration: none;">
-                    <div class="px-2 mb-2" style="aspect-ratio:16/9"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
-                    <div class="d-flex gap-2 px-2">
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
                       <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
                       <div class=" text_third">
-                        <h6>Compound Name</h6>
-                        <div class="d-flex"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
-                          <p>Location</p>
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
                         </div>
                       </div>
                     </div>
-                    <div class="d-felx row justify-content-end px-2 ">
+                    <div class="d-felx row justify-content-end px-0 ">
                       <div class=" text-end col-6 text_third d-flex flex-column ">
-                        <p class="mb-0">Starting Price</p>
+                        <p class="mb-0 small_text">Starting Price</p>
                         <hr class=" m-0">
                         <div class="d-flex justify-content-end gap-1 h5">
-                          <p>6,000,000</p><span>EGP</span>
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
                         </div>
                       </div>
                     </div></a></div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-6 col-xl-4 mb-3 px-1">
-                <div class="   shadow-sm position-relative overflow-hidden"><a href="property.html" style="  text-decoration: none;">
-                    <div class="px-2 mb-2" style="aspect-ratio:16/9"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
-                    <div class="d-flex gap-2 px-2">
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
                       <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
                       <div class=" text_third">
-                        <h6>Compound Name</h6>
-                        <div class="d-flex"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
-                          <p>Location</p>
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
                         </div>
                       </div>
                     </div>
-                    <div class="d-felx row justify-content-end px-2 ">
+                    <div class="d-felx row justify-content-end px-0 ">
                       <div class=" text-end col-6 text_third d-flex flex-column ">
-                        <p class="mb-0">Starting Price</p>
+                        <p class="mb-0 small_text">Starting Price</p>
                         <hr class=" m-0">
                         <div class="d-flex justify-content-end gap-1 h5">
-                          <p>6,000,000</p><span>EGP</span>
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
+                        </div>
+                      </div>
+                    </div></a></div>
+              </div>
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
+                      <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
+                      <div class=" text_third">
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-felx row justify-content-end px-0 ">
+                      <div class=" text-end col-6 text_third d-flex flex-column ">
+                        <p class="mb-0 small_text">Starting Price</p>
+                        <hr class=" m-0">
+                        <div class="d-flex justify-content-end gap-1 h5">
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
+                        </div>
+                      </div>
+                    </div></a></div>
+              </div>
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
+                      <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
+                      <div class=" text_third">
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-felx row justify-content-end px-0 ">
+                      <div class=" text-end col-6 text_third d-flex flex-column ">
+                        <p class="mb-0 small_text">Starting Price</p>
+                        <hr class=" m-0">
+                        <div class="d-flex justify-content-end gap-1 h5">
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
+                        </div>
+                      </div>
+                    </div></a></div>
+              </div>
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
+                      <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
+                      <div class=" text_third">
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-felx row justify-content-end px-0 ">
+                      <div class=" text-end col-6 text_third d-flex flex-column ">
+                        <p class="mb-0 small_text">Starting Price</p>
+                        <hr class=" m-0">
+                        <div class="d-flex justify-content-end gap-1 h5">
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
+                        </div>
+                      </div>
+                    </div></a></div>
+              </div>
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
+                      <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
+                      <div class=" text_third">
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-felx row justify-content-end px-0 ">
+                      <div class=" text-end col-6 text_third d-flex flex-column ">
+                        <p class="mb-0 small_text">Starting Price</p>
+                        <hr class=" m-0">
+                        <div class="d-flex justify-content-end gap-1 h5">
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
+                        </div>
+                      </div>
+                    </div></a></div>
+              </div>
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
+                      <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
+                      <div class=" text_third">
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-felx row justify-content-end px-0 ">
+                      <div class=" text-end col-6 text_third d-flex flex-column ">
+                        <p class="mb-0 small_text">Starting Price</p>
+                        <hr class=" m-0">
+                        <div class="d-flex justify-content-end gap-1 h5">
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
+                        </div>
+                      </div>
+                    </div></a></div>
+              </div>
+              <div class="w-100 h-100   p-0" style="min-width:216px">
+                <div class=" py-3  shadow position-relative overflow-hidden " style="box-shadow: #87bba2; padding-right:14px;padding-left:14px;"><a href="property.html" style="  text-decoration: none;">
+                    <div class="px-0 mb-2"><img src="../img/Group 160.png" alt="" width="100%" height="100%"></div>
+                    <div class="d-flex  px-0" style="gap:13px">
+                      <div class=" "><img src="../img/Group 277.png" alt="" width="52" height="52"></div>
+                      <div class=" text_third">
+                        <p class="normal_text m-0">Compound Name</p>
+                        <div class="d-flex small_text"><i class="bi bi-geo-alt-fill me-2 text_secondary"></i>
+                          <p class="small_text">Location</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-felx row justify-content-end px-0 ">
+                      <div class=" text-end col-6 text_third d-flex flex-column ">
+                        <p class="mb-0 small_text">Starting Price</p>
+                        <hr class=" m-0">
+                        <div class="d-flex justify-content-end gap-1 h5">
+                          <p class="mb-0">6,000,000</p>
+                          <p class="m-0">EGP</p>
                         </div>
                       </div>
                     </div></a></div>
@@ -427,214 +575,216 @@
             <div class="d-flex justify-content-center mt-5">
               <nav aria-label="Page navigation example ">
                 <ul class="pagination justify-content-center ">
-                  <li class="page-item "><a class="page-link">Previous</a></li>
+                  <li class="page-item "><a class="page-link"> <i class="bi bi-caret-left-fill me-2"></i><span>Previous</span></a></li>
                   <li class="page-item " aria-current="page"><a class="page-link" href="#">1</a></li>
                   <li class="page-item active"><a class="page-link" href="#">2</a></li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  <li class="page-item "><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#"> <span class="me-2">Next</span><i class="bi bi-caret-right-fill"></i></a></li>
                 </ul>
               </nav>
             </div>
           </div>
         </div>
       </form>
-      <div class="offcanvas offcanvas-start section-colors_secondary" id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Fillter</h5>
-          <button class="btn-close section-colors_secondary  text-reset text_primary" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </section>
+    <div class="offcanvas offcanvas-start section-colors_secondary" id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Fillter</h5>
+        <button class="btn-close section-colors_secondary  text-reset text_primary" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <form class="offcanvas-body section-colors_secondary p-4 mb-5" action="">
+        <div> 
+          <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <h5>FIND</h5><i class="bi bi-caret-down-fill"> </i>
+          </button>
+          <div class=" my-3 collapse " id="collapseExample">
+            <div class=" form-check-inline">
+              <input class="btn-check rounded-0" id="Property" type="radio" name="options1" autocomplete="off" checked>
+              <label class="btn-secondary2 border rounded-0 scheck" for="Property"></label>
+              <label class="m-2" for="Property">Property</label>
+            </div>
+            <div class="form-check-inline">
+              <input class="btn-check rounded-0" id="Compound" type="radio" name="options1" autocomplete="off">
+              <label class="btn-secondary2 border rounded-0 scheck" for="Compound"></label>
+              <label class="m-2" for="Compound">Compound</label>
+            </div>
+          </div>
         </div>
-        <form class="offcanvas-body section-colors_secondary p-4 mb-5" action="">
-          <div> 
-            <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              <h5>FIND</h5><i class="bi bi-caret-down-fill"> </i>
-            </button>
-            <div class=" my-3 collapse " id="collapseExample">
-              <div class=" form-check-inline">
-                <input class="btn-check rounded-0" id="Property" type="radio" name="options1" autocomplete="off" checked>
-                <label class="btn-secondary2 border rounded-0 scheck" for="Property"></label>
-                <label class="m-2" for="Property">Property</label>
+        <div> 
+          <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+            <h5>PAYMENTS</h5><i class="bi bi-caret-down-fill">                                       </i>
+          </button>
+          <div class=" my-3 collapse " id="collapseExample3">      
+            <div class=" mb-3   position-relative">
+              <label class="form-label" for="input5">Down Payments</label>
+              <input class="form-control rounded-0 section-colors_primary px-2 my-3" id="input5" type="number" placeholder="Max Amount" aria-labelledby="numberHelpBlock">
+            </div>
+            <div class=" mb-3  position-relative">
+              <label class="form-label" for="input6">Monthly Installments</label>
+              <input class="form-control rounded-0 section-colors_primary px-2 my-3" id="input6" type="number" placeholder="Max Amount" aria-labelledby="numberHelpBlock">
+            </div>
+            <div class=" mb-3   position-relative  w-100 ">
+              <label class="mb-" for="property">Years Of Installments</label>
+              <select class="form-select  section-colors_primary rounded-0 my-3" aria-label=".form-select example">
+                <option selected>1 year</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="overflow-auto">
+          <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
+            <h5>BEDROOMS</h5><i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class=" my-3 collapse " id="collapseExample7">
+            <div class="d-flex my-3">
+              <div class=" form-check-inline d-flex justify-content-center align-items-center numberbtn-size">
+                <input class="btn-check rounded-0" id="one" type="radio" name="options4" autocomplete="off" checked>
+                <label class="btn-secondary3 border rounded-0  d-flex justify-content-center align-items-center numberbtn-size " for="one"> <span>1</span></label>
               </div>
               <div class="form-check-inline">
-                <input class="btn-check rounded-0" id="Compound" type="radio" name="options1" autocomplete="off">
-                <label class="btn-secondary2 border rounded-0 scheck" for="Compound"></label>
-                <label class="m-2" for="Compound">Compound</label>
+                <input class="btn-check  rounded-0" id="two" type="radio" name="options4" autocomplete="off">
+                <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="two"> <span>2</span></label>
+              </div>
+              <div class=" form-check-inline">
+                <input class="btn-check rounded-0" id="three" type="radio" name="options4" autocomplete="off">
+                <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="three"> <span>3</span></label>
+              </div>
+              <div class="form-check-inline">
+                <input class="btn-check  rounded-0" id="four" type="radio" name="options4" autocomplete="off">
+                <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="four"> <span>4</span></label>
+              </div>
+              <div class="form-check-inline">
+                <input class="btn-check  rounded-0" id="five" type="radio" name="options4" autocomplete="off">
+                <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="five"><span>5</span></label>
+              </div>
+              <div class="form-check-inline">
+                <input class="btn-check  rounded-0" id="six" type="radio" name="options4" autocomplete="off">
+                <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="six"> <span>6+</span></label>
               </div>
             </div>
           </div>
-          <div> 
-            <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
-              <h5>PAYMENTS</h5><i class="bi bi-caret-down-fill">                                       </i>
-            </button>
-            <div class=" my-3 collapse " id="collapseExample3">      
-              <div class=" mb-3   position-relative">
-                <label class="form-label" for="input5">Down Payments</label>
-                <input class="form-control rounded-0 section-colors_primary px-2 my-3" id="input5" type="number" placeholder="Max Amount" aria-labelledby="numberHelpBlock">
+        </div>
+        <div class="overflow-auto">
+          <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+            <h5>BATHROOMS</h5><i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class=" my-3 collapse " id="collapseExample6">
+            <div class="d-flex my-3">
+              <div class=" form-check-inline">
+                <input class="btn-check rounded-0" id="one1" type="radio" name="options5" autocomplete="off" checked>
+                <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="one1"><span>1</span></label>
               </div>
-              <div class=" mb-3  position-relative">
-                <label class="form-label" for="input6">Monthly Installments</label>
-                <input class="form-control rounded-0 section-colors_primary px-2 my-3" id="input6" type="number" placeholder="Max Amount" aria-labelledby="numberHelpBlock">
+              <div class="form-check-inline">
+                <input class="btn-check  rounded-0" id="two1" type="radio" name="options5" autocomplete="off">
+                <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="two1"> <span>2</span></label>
               </div>
-              <div class=" mb-3   position-relative  w-100 ">
-                <label class="mb-" for="property">Years Of Installments</label>
-                <select class="form-select  section-colors_primary rounded-0 my-3" aria-label=".form-select example">
-                  <option selected>1 year</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+              <div class=" form-check-inline">
+                <input class="btn-check rounded-0" id="three1" type="radio" name="options5" autocomplete="off">
+                <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="three1"> <span>3</span></label>
               </div>
-            </div>
-          </div>
-          <div class="overflow-auto">
-            <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
-              <h5>BEDROOMS</h5><i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class=" my-3 collapse " id="collapseExample7">
-              <div class="d-flex my-3 ">
-                <div class=" form-check-inline">
-                  <input class="btn-check rounded-0" id="one" type="radio" name="options4" autocomplete="off" checked>
-                  <label class="btn-secondary3 border rounded-0 btn" for="one">1</label>
-                </div>
-                <div class="form-check-inline">
-                  <input class="btn-check  rounded-0" id="two" type="radio" name="options4" autocomplete="off">
-                  <label class="btn-secondary3 border rounded-0 btn" for="two">2</label>
-                </div>
-                <div class=" form-check-inline">
-                  <input class="btn-check rounded-0" id="three" type="radio" name="options4" autocomplete="off">
-                  <label class="btn-secondary3 border rounded-0 btn" for="three">3</label>
-                </div>
-                <div class="form-check-inline">
-                  <input class="btn-check  rounded-0" id="four" type="radio" name="options4" autocomplete="off">
-                  <label class="btn-secondary3 border rounded-0 btn" for="four">4</label>
-                </div>
-                <div class="form-check-inline">
-                  <input class="btn-check  rounded-0" id="five" type="radio" name="options4" autocomplete="off">
-                  <label class="btn-secondary3 border rounded-0 btn" for="five">5</label>
-                </div>
-                <div class="form-check-inline">
-                  <input class="btn-check  rounded-0" id="six" type="radio" name="options4" autocomplete="off">
-                  <label class="btn-secondary3 border rounded-0 btn" for="six">6+</label>
-                </div>
+              <div class="form-check-inline">
+                <input class="btn-check  rounded-0" id="four1" type="radio" name="options5" autocomplete="off">
+                <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="four1"><span>4</span></label>
+              </div>
+              <div class="form-check-inline">
+                <input class="btn-check  rounded-0" id="five1" type="radio" name="options5" autocomplete="off">
+                <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="five1"> <span>5</span></label>
+              </div>
+              <div class="form-check-inline">
+                <input class="btn-check  rounded-0" id="six1" type="radio" name="options5" autocomplete="off">
+                <label class="btn-secondary3 border rounded-0 d-flex justify-content-center align-items-center numberbtn-size" for="six1"> <span>6+</span></label>
               </div>
             </div>
           </div>
-          <div class="overflow-auto">
-            <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
-              <h5>BATHROOMS</h5><i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class=" my-3 collapse " id="collapseExample6">
-              <div class="d-flex my-3">
-                <div class=" form-check-inline">
-                  <input class="btn-check rounded-0" id="one1" type="radio" name="options5" autocomplete="off" checked>
-                  <label class="btn-secondary3 border rounded-0 btn" for="one1">1</label>
-                </div>
-                <div class="form-check-inline">
-                  <input class="btn-check  rounded-0" id="two1" type="radio" name="options5" autocomplete="off">
-                  <label class="btn-secondary3 border rounded-0 btn" for="two1">2</label>
-                </div>
-                <div class=" form-check-inline">
-                  <input class="btn-check rounded-0" id="three1" type="radio" name="options5" autocomplete="off">
-                  <label class="btn-secondary3 border rounded-0 btn" for="three1">3</label>
-                </div>
-                <div class="form-check-inline">
-                  <input class="btn-check  rounded-0" id="four1" type="radio" name="options5" autocomplete="off">
-                  <label class="btn-secondary3 border rounded-0 btn" for="four1">4</label>
-                </div>
-                <div class="form-check-inline">
-                  <input class="btn-check  rounded-0" id="five1" type="radio" name="options5" autocomplete="off">
-                  <label class="btn-secondary3 border rounded-0 btn" for="five1">5</label>
-                </div>
-                <div class="form-check-inline">
-                  <input class="btn-check  rounded-0" id="six1" type="radio" name="options5" autocomplete="off">
-                  <label class="btn-secondary3 border rounded-0 btn" for="six1">6+</label>
-                </div>
+        </div>
+        <div>
+          <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8">
+            <label class="mb-2 " for="min-price"> <span class="me-2">PRICE </span><small>EGP</small></label><i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="  collapse " id="collapseExample8">
+            <div class="d-flex gap-3 my-3">
+              <div class="input-group">
+                <input class="form-control rounded-0 section-colors_primary" id="min-price" type="number" placeholder="Min">
+              </div>
+              <div class="input-group">
+                <input class="form-control rounded-0 section-colors_primary" id="max-price" type="number" placeholder="Max">
               </div>
             </div>
           </div>
-          <div>
-            <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8">
-              <label class="mb-2 " for="min-price"> <span class="me-2">PRICE </span><small>EGP</small></label><i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class="  collapse " id="collapseExample8">
-              <div class="d-flex gap-3 my-3">
-                <div class="input-group">
-                  <input class="form-control rounded-0 section-colors_primary" id="min-price" type="number" placeholder="Min">
-                </div>
-                <div class="input-group">
-                  <input class="form-control rounded-0 section-colors_primary" id="max-price" type="number" placeholder="Max">
-                </div>
+        </div>
+        <div>
+          <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample9">
+            <label class="mb-2 " for="min-price"> <span class="me-2">SQUARE METER</span><small>M2</small></label><i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="  collapse " id="collapseExample9">
+            <div class="d-flex gap-3 my-3">
+              <div class="input-group">
+                <input class="form-control rounded-0 section-colors_primary" id="min-meter" type="number" placeholder="Min">
+              </div>
+              <div class="input-group">
+                <input class="form-control rounded-0 section-colors_primary" id="max-meter" type="number" placeholder="Max">
               </div>
             </div>
           </div>
-          <div>
-            <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample9">
-              <label class="mb-2 " for="min-price"> <span class="me-2">SQUARE METER</span><small>M2</small></label><i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class="  collapse " id="collapseExample9">
-              <div class="d-flex gap-3 my-3">
-                <div class="input-group">
-                  <input class="form-control rounded-0 section-colors_primary" id="min-meter" type="number" placeholder="Min">
-                </div>
-                <div class="input-group">
-                  <input class="form-control rounded-0 section-colors_primary" id="max-meter" type="number" placeholder="Max">
-                </div>
+        </div>
+        <div> 
+          <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+            <h5>FINISHING</h5><i class="bi bi-caret-down-fill"> </i>
+          </button>
+          <div class=" my-3 collapse " id="collapseExample4">
+            <div class="d-flex flex-column ">
+              <div class=" form-check-inline">
+                <input class="btn-check rounded-0" id="Not_Finished" type="radio" name="options2" autocomplete="off" checked>
+                <label class="btn-secondary2 border rounded-0 scheck" for="Not_Finished"></label>
+                <label class="m-2" for="Not_Finished">Not Finished</label>
+              </div>
+              <div class="form-check-inline">
+                <input class="btn-check rounded-0" id="Semi_Finished" type="radio" name="options2" autocomplete="off">
+                <label class="btn-secondary2 border rounded-0 scheck" for="Semi_Finished"></label>
+                <label class="m-2" for="Semi_Finished">Semi Finished</label>
+              </div>
+              <div class=" form-check-inline">
+                <input class="btn-check rounded-0" id="Finished" type="radio" name="options2" autocomplete="off">
+                <label class="btn-secondary2 border rounded-0 scheck" for="Finished"></label>
+                <label class="m-2" for="Finished">Finished</label>
+              </div>
+              <div class="form-check-inline">
+                <input class="btn-check rounded-0" id="Furnished" type="radio" name="options2" autocomplete="off">
+                <label class="btn-secondary2 border rounded-0 scheck" for="Furnished"></label>
+                <label class="m-2" for="Furnished">Furnished</label>
               </div>
             </div>
           </div>
-          <div> 
-            <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
-              <h5>FINISHING</h5><i class="bi bi-caret-down-fill"> </i>
-            </button>
-            <div class=" my-3 collapse " id="collapseExample4">
-              <div class="d-flex flex-column ">
-                <div class=" form-check-inline">
-                  <input class="btn-check rounded-0" id="Not_Finished" type="radio" name="options2" autocomplete="off" checked>
-                  <label class="btn-secondary2 border rounded-0 scheck" for="Not_Finished"></label>
-                  <label class="m-2" for="Not_Finished">Not Finished</label>
-                </div>
-                <div class="form-check-inline">
-                  <input class="btn-check rounded-0" id="Semi_Finished" type="radio" name="options2" autocomplete="off">
-                  <label class="btn-secondary2 border rounded-0 scheck" for="Semi_Finished"></label>
-                  <label class="m-2" for="Semi_Finished">Semi Finished</label>
-                </div>
-                <div class=" form-check-inline">
-                  <input class="btn-check rounded-0" id="Finished" type="radio" name="options2" autocomplete="off">
-                  <label class="btn-secondary2 border rounded-0 scheck" for="Finished"></label>
-                  <label class="m-2" for="Finished">Finished</label>
-                </div>
-                <div class="form-check-inline">
-                  <input class="btn-check rounded-0" id="Furnished" type="radio" name="options2" autocomplete="off">
-                  <label class="btn-secondary2 border rounded-0 scheck" for="Furnished"></label>
-                  <label class="m-2" for="Furnished">Furnished</label>
-                </div>
+        </div>
+        <div> 
+          <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+            <h5>SALE TYPE</h5><i class="bi bi-caret-down-fill"> </i>
+          </button>
+          <div class=" my-3 collapse " id="collapseExample5">
+            <div class="d-flex flex-column  ">
+              <div class=" form-check-inline">
+                <input class="btn-check rounded-0" id="Resale" type="radio" name="options3" autocomplete="off" checked>
+                <label class="btn-secondary2 border rounded-0 scheck" for="Property"></label>
+                <label class="m-2" for="Resale">Resale</label>
+              </div>
+              <div class="form-check-inline">
+                <input class="btn-check rounded-0" id="Developer_Sale" type="radio" name="options3" autocomplete="off">
+                <label class="btn-secondary2 border rounded-0 scheck" for="Developer_Sale"></label>
+                <label class="m-2" for="Developer_Sale">Developer Sale</label>
               </div>
             </div>
           </div>
-          <div> 
-            <button class="rounded-0 d-flex justify-content-between w-100 section-colors_secondary btn rounded-0 d-flex justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
-              <h5>SALE TYPE</h5><i class="bi bi-caret-down-fill"> </i>
-            </button>
-            <div class=" my-3 collapse " id="collapseExample5">
-              <div class="d-flex flex-column  ">
-                <div class=" form-check-inline">
-                  <input class="btn-check rounded-0" id="Resale" type="radio" name="options3" autocomplete="off" checked>
-                  <label class="btn-secondary2 border rounded-0 scheck" for="Property"></label>
-                  <label class="m-2" for="Resale">Resale</label>
-                </div>
-                <div class="form-check-inline">
-                  <input class="btn-check rounded-0" id="Developer_Sale" type="radio" name="options3" autocomplete="off">
-                  <label class="btn-secondary2 border rounded-0 scheck" for="Developer_Sale"></label>
-                  <label class="m-2" for="Developer_Sale">Developer Sale</label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-grid section-colors_third mt-3">
-            <button class="btn  rounded-0" type="submit" style="padding:16px 12px;">Search</button>
-          </div>
-        </form>
-      </div>
-    </section>
+        </div>
+        <div class="d-grid section-colors_third mt-3">
+          <button class="btn  rounded-0" type="submit" style="padding:16px 12px;">Search</button>
+        </div>
+      </form>
+    </div>
     <footer class="text-center text-lg-start  m-auto py-5 position-relative">
       <hr class="my-5  w-50 mx-auto " style="height: 3px;">
       <div class=" p-5 m-auto" style="width: fit-content;z-index:10;">
@@ -666,7 +816,7 @@
           <!-- Grid column-->
         </div>
       </div>
-      <div class="text-center  p-5" style="z-index:50;">© 2023 — Upshare Properties All Rights Reserved. Developed by<a class="mx-2 position-relative" href="#" style="z-index:50 !important;">Disirius.</a></div>
+      <div class="text-center  p-5" style="z-index:50;"><small>© 2023 — Upshare Properties All Rights Reserved. Developed by<a class="mx-2 position-relative" href="#" style="z-index:50 !important;">Disirius.</a></small></div>
       <div class="d-lg-flex justify-content-end  w-50 d-none position-absolute footer_img" style="right:0;bottom:0;z-index:5;"><img src="../img/Group 389.png" alt="" width="100%" height="100%"></div>
     </footer>
     <div class="position-fixed d-flex flex-column gap-2 p-3 pb-4 align-items-center" style="right:0;bottom:0;z-index:50"><a href="#">
