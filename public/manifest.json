@@ -1,0 +1,37 @@
+{
+    "name": "upshare Progressive Web App",
+    "short_name": "upshare",
+    "description": "Progressive Web App that show the  .",
+    "icons": [
+        {
+            "src": "../public/img/logo32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+            
+        },
+        {
+            "src": "../public/img/logo64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+            
+        },
+        {
+            "src": "../public/img/logo256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+            
+        },
+        {
+            "src": "../public/img/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+            
+        }
+    ],
+    "start_url": "/public/html/index.html",
+    "display": "standalone",
+    "theme_color":"#F0F7EE",
+    "background_color": "#0E3840"
+}
+
+

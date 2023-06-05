@@ -4,6 +4,10 @@ html(lang="en", dir="ltr")
         include components/head.pug
     body(class="bg_secondary ")
         include components/navbar.pug
+        div#preloader(class="bg_primary w-100 h-100 position-fixed top-0  ", style="z-index:555555555555555555555555555")
+            div(class="bg_primary w-100 h-100  d-flex align-items-center justify-content-center", style="z-index:555555555555555555555555555")
+                img(class="logoPicNav w-20  mx-auto", src="../img/Group 128.png", alt="")
+
         section(class="container-project py-3 py-lg-5  " )
             div(class="position-relative " style="aspect-ratio: 16/9;")
                 img(src="../img/Group 400.png", alt="",width="100%", height="100%")

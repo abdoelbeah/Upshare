@@ -1,0 +1,98 @@
+doctype html
+html(lang="en", dir="ltr")
+    head
+        include components/head.pug
+    body(class="bg_secondary")
+        include components/navbar.pug
+        div#preloader(class="bg_primary w-100 h-100 position-fixed top-0  ", style="z-index:555555555555555555555555555")
+            div(class="bg_primary w-100 h-100  d-flex align-items-center justify-content-center", style="z-index:555555555555555555555555555")
+                img(class="logoPicNav w-20  mx-auto", src="../img/Group 128.png", alt="")
+ 
+        section(class="container-fliud    pb-5 mb-5 " )
+            div(class="position-relative " style="height:795px")
+                img(src="../img/Group 688.png", alt="",width="100%", height="100%")
+                div(class="container-project position-absolute  w-100  m-0 " style="z-index:5;top:17%;height:690px" )
+                    div(class="row bg_secondary w-100 h-100 pt-lg-0 pt-5 shadow m-0")
+                        div(class="col-lg-6 col-12 d-flex align-items-center justify-content-center flex-column  px-lg-5 ")
+                            div 
+                                h1(class="me-5 text_third article-size1") NEED EXPERT ADVICE ?
+                                p(class="article-size7 text-green") Fill out the form and one of our property consultants will contact you.
+
+                        div(class=" col-lg-6 col-12")
+
+                            div(class="position-relative w-100 h-100")
+                                form#contactForm(action="" class="w-100 absolute_form  bg_secondary  shadow   form_padding" style="z-index:10;top:15%;left:10%  ")
+                                    h2(class=" text-red article-size6 mb-5") CONTACT US
+                                    div(class="form-floating   form-group floating-label-form-group controls my-4  btn-contact position-relative")
+                                        input#name(class="form-control rounded-0 btn-contact shadow", type="text", placeholder="Enter your name...", name="name" required style="border:none")
+                                        label(for="name")  NAME
+                                        div(class="triangle-topright-red ", style="position: absolute; top: 0; right: 0")
+                                        div(class="invalid-feedback") A name is required.
+                                    // Phone number input
+                                    div(class="form-floating my-4  btn-contact position-relative ")
+                                        input#phone(class="form-control rounded-0 btn-contact shadow", type="tel", placeholder="(123) 456-7890",  name="phone" required style="border:none")
+                                        label(for="phone") NUMBER
+                                        div(class="triangle-topright-red ", style="position: absolute; top: 0; right: 0")
+                                        div(class="invalid-feedback")
+                                            | A phone number is required.
+                                    div(class="form-floating my-4   btn-contact position-relative w-100")
+                                        label(for="property", class="sr-only") COUNTRY
+                                        select(class="form-select form-select-xl btn-contact rounded-0 select-style1 shadow", aria-label=".form-select-lg example" name="Coutry" required style="border:none")
+                                            option(selected) COUNTRY
+                                            option(value="1") One
+                                            option(value="2") Two
+                                            option(value="3") Three
+                                        div(class="triangle-topright-red ", style="position: absolute; top: 0; right: 0")
+                                    div(class="form-floating my-4 btn-contact position-relative")
+                                        textarea#location(style="height: 135px ;border:none", class="form-control rounded-0 btn-contact shadow", placeholder="Enter your ",name="REQUEST"  required ,)
+                                        label(for="location") PREFERRED LOCATION
+                                        div(class="triangle-topright-red  ", style="position: absolute; top: 0; right: 0")
+                                        div(class="invalid-feedback") A REQUEST is required.
+                                    // Submit Button
+                                    div(class="d-grid bg-red ")
+                                        button(class="btn send rounded-0", type="submit" style="padding:16px 12px;")
+                                            | Send
+                            
+        section(class="page-section bg_secondary text_third", style="padding: 100px 0 0 0")
+            div(class="pt-5 px-5")
+                div(class="mt-5 py-3")
+                    div(class="row gx-4 gx-lg-5")
+                        div(class="col-lg-8 col-xl-6 text-center mx-auto")
+                            h4(class="text-red article-size8") GET IN TOUCH WITH US
+                    div(class="row pt-5")
+                        div(class="col-lg-4 text-center mb-5 mb-lg-0")
+                            img(src="../img/Group 2.png", alt="", width="35px", height="50px")
+                            div(class="fw-semibold land-icons mt-4") PHONE
+                            div(class="flex-column d-flex py-4 text_third")
+                                a(class="text_third text-decoration-none", href="tel:++1 (555) 123-4567")
+                                    | +1 (555) 123-4567
+                                a(class="text_third text-decoration-none", href="tel:+1 (555) 123-4567") +1 (555) 123-4567
+                        div(class="col-lg-4 text-center mb-5 mb-lg-0")
+                            img(src="../img/Group 130.png", alt="", width="35px", height="50px")
+                            div(class="mt-4 fw-semibold land-icons" ) LOCATION
+                            div(class="flex-column d-flex py-4 text_third") Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+
+                        div(class="col-lg-4 text-center mb-5 mb-lg-0")
+                            img(src="../img/Group 133.png", alt="", width="65px", height="50px")
+                            div(class=" fw-semibold land-icons mt-4") EMAIL
+                            div(class="flex-column d-flex py-4 text_third")
+                                a(class="text_third text-decoration-none", href="mailto:mail.upshare.com ")  mail.upshare.com 
+                                a(class="text_third text-decoration-none",href="mailto:mail.upshareproperties.com") mail.upshareproperties.com
+                
+                div(class="pt-5 mt-5")
+                    div(class="row gx-4 gx-lg-5")
+                        div(class="col-lg-8 col-xl-6 text-center mx-auto")
+                            h4(class="text_third") CONNECT WITH US
+                    div(class="row container w-50 mx-auto pt-5")
+                        div(class="col-lg-4 mb-5 mb-lg-0 text-center")
+                            a(class=" " href="#")
+                                i(class="bi bi-instagram mb-4 text_third icon-size")
+                        div(class="col-lg-4 mb-5 mb-lg-0 text-center")
+                            a(class=" " href="#")
+                                i(class="bi bi-facebook mb-4 text_third icon-size")
+                        div(class="col-lg-4 mb-5 mb-lg-0 text-center")
+                            a(class=" " href="#")
+                                i(class="bi bi-whatsapp mb-4 text_third icon-size")
+        include components/footer.pug
+        include components/side_contact.pug
+        script(src="../js/app.js")

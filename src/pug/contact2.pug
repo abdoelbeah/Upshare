@@ -4,6 +4,10 @@ html(lang="en", dir="ltr")
         include components/head.pug
     body
         include components/navbar.pug
+        div#preloader(class="bg_primary w-100 h-100 position-fixed top-0  ", style="z-index:555555555555555555555555555")
+            div(class="bg_primary w-100 h-100  d-flex align-items-center justify-content-center", style="z-index:555555555555555555555555555")
+                img(class="logoPicNav w-20  mx-auto", src="../img/Group 128.png", alt="")
+
         section(class="page-section section-colors_secondary", style="padding: 80px 0;")
             div(class=" py-3  px-5")
                 div(class="row")
@@ -49,6 +53,7 @@ html(lang="en", dir="ltr")
                                     // Submit Button
                                     div(class="d-grid mt-4")
                                         button(class="btn  p-3  btn-xl rounded-0 w-25 section-colors_third_dark mx-auto", type="submit") Send
+               
                 div(class="mt-5 py-5")
                     div(class="row gx-4 gx-lg-5  ")
                         div(class="col-lg-8 col-xl-6 text-center mx-auto")
@@ -56,19 +61,19 @@ html(lang="en", dir="ltr")
                     div(class="row pt-5")
                         div(class="col-lg-4 text-center mb-5 mb-lg-0")
                             img(src="../img/Group 2.png", alt="", width="35px", height="50px")
-                            div(class="mt-4") PHONE
+                            div(class="fw-semibold land-icons mt-4") PHONE
                             div(class="flex-column d-flex py-4 text_primary ")
                                 a(class="text_primary", href="tel:++1 (555) 123-4567")  +1 (555) 123-4567
                                 a(class="text_primary", href="tel:+1 (555) 123-4567") +1 (555) 123-4567
                         div(class="col-lg-4 text-center mb-5 mb-lg-0")
                             img(src="../img/Group 130.png", alt="", width="35px", height="50px")
-                            div(class="mt-4") LOCATION
+                            div(class="fw-semibold land-icons mt-4") LOCATION
                             div(class="flex-column d-flex py-4 text_primary ")
                                 a(class="text_primary", href="tel:++1 (555) 123-4567")  +1 (555) 123-4567
                                 a(class="text_primary", href="tel:+1 (555) 123-4567") +1 (555) 123-4567
                         div(class="col-lg-4 text-center mb-5 mb-lg-0")
                             img(src="../img/Group 133.png", alt="", width="65px", height="50px")
-                            div(class="mt-4") EMAIL
+                            div(class="fw-semibold land-icons mt-4") EMAIL
                             div(class="flex-column d-flex py-4 text_primary ")
                                 a(class="text_primary", href="tel:++1 (555) 123-4567")  +1 (555) 123-4567
                                 a(class="text_primary", href="tel:+1 (555) 123-4567") +1 (555) 123-4567
@@ -77,12 +82,15 @@ html(lang="en", dir="ltr")
                         div(class="col-lg-8 col-xl-6 text-center mx-auto")
                             h4(class=" text_primary") CONNECT WITH US
                     div(class="row container w-50 mx-auto pt-5")
-                        div(class="col-lg-4 text-center mb-5 mb-lg-0")
-                            i(class="bi bi-instagram mb-4 text_primary icon-size")
-                        div(class="col-lg-4 text-center mb-5 mb-lg-0")
-                            i(class="bi bi-facebook mb-4 text_primary icon-size")
-                        div(class="col-lg-4 text-center mb-5 mb-lg-0")
-                            i(class="bi bi-whatsapp mb-4 text_primary icon-size")
+                        div(class="col-lg-4 mb-5 mb-lg-0 text-center")
+                            a(class=" " href="#")
+                                i(class="bi bi-instagram mb-4 text_primary icon-size")
+                        div(class="col-lg-4 mb-5 mb-lg-0 text-center")
+                            a(class=" " href="#")
+                                i(class="bi bi-facebook mb-4 text_primary icon-size")
+                        div(class="col-lg-4 mb-5 mb-lg-0 text-center")
+                            a(class=" " href="#")
+                                i(class="bi bi-whatsapp mb-4 text_primary icon-size")
         include components/footer.pug
         include components/side_contact.pug
         script(src="../js/app.js").

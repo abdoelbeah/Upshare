@@ -1,0 +1,108 @@
+doctype html
+html(lang="en", dir="ltr")
+    head
+        include components/head.pug
+    body(class="bg_secondary")
+        include components/navbar.pug
+        div#preloader(class="bg_primary w-100 h-100 position-fixed top-0  ", style="z-index:555555555555555555555555555")
+            div(class="bg_primary w-100 h-100  d-flex align-items-center justify-content-center", style="z-index:555555555555555555555555555")
+                img(class="logoPicNav w-20  mx-auto", src="../img/Group 128.png", alt="")
+
+        section(class="container-project py-3 py-lg-5" )
+            div(class="position-relative " style="aspect-ratio: 16/9;")
+                img(src="../img/Group 400.png", alt="",width="100%", height="100%")
+
+                div(class="w-100 h-100 overlay-2 position-absolute top-0" style="z-index:5;") 
+                div(class="position-absolute   w-50 row p-sm-4 p-1 bottom-0 end-0 " style="z-index: 5; " )
+                    div(class=" d-flex justify-content-end   w-100")
+                        div(class="" style="width:fit-content")
+                            div(class="")
+                                h1(class="m-0 mb-lg-2 article-size3 text_secondary " ) 
+                                    span(class="me-2") 83,000 
+                                    span(class="article-size5") EGP
+                                div(class="article-size4")  DOWNPAYMENT  
+                            div(class="")
+                                h1(class="m-0 mb-lg-2 article-size3 text_secondary " )
+                                    span(class="me-2") 5
+                                    span(class="article-size5") YEARS
+                                div(class="article-size4")  INSTALLMENT 
+                            div(class="")
+                                h1(class="m-0 mb-lg-2 article-size3 text_secondary " ) 
+                                    span(class="me-2") 61 
+                                    span(class="article-size5") M2
+                                div(class="article-size4")  STARTING AREA 
+                            div(class="mt-sm-4 mt-1 ")
+                                h1(class="m-0 mb-lg-2 article-size4 " )
+                                    span(class="article-size5 bi bi-geo-alt-fill text_secondary me-2") 
+                                    span(class=" ") CITY HALL, NEW CAIRO
+
+                           
+
+        section(class="container-project py-3 py-lg-5") 
+            div(class="row")
+                div(class="col-lg-8 col-12")
+                    div(class="position-relative ")
+                        form#contactForm(action="" class=" absolute_form  bg_secondary  shadow " style="top:-400px;z-index:10; left:5% ;padding:34px 25px 34px 32px; ")
+                            div(class="form-floating   form-group floating-label-form-group controls my-3  btn-contact position-relative")
+                                input#name(style="border:none" class="shadow form-control rounded-0 btn-contact", type="text", placeholder="Enter your name...", name="name" required)
+                                label(for="name")  NAME
+                                div(class="triangle-topright-red ", style="position: absolute; top: 0; right: 0")
+                                div(class="invalid-feedback") A name is required.
+                            // Phone number input
+                            div(class="form-floating my-3  btn-contact position-relative ")
+                                input#phone(style="border:none" class="shadow form-control rounded-0 btn-contact", type="tel", placeholder="(123) 456-7890",  name="phone" required)
+                                label(for="phone") NUMBER
+                                div(class="triangle-topright-red ", style="position: absolute; top: 0; right: 0")
+                                div(class="invalid-feedback")
+                                    | A phone number is required.
+                            div(class="form-floating my-3  btn-contact position-relative w-100")
+                                label(for="property", class="sr-only") COUNTRY
+                                select(style="border:none" class="shadow form-select form-select-xl btn-contact rounded-0 select-style1", aria-label=".form-select-lg example" name="Coutry" required)
+                                    option(selected) COUNTRY
+                                    option(value="1") One
+                                    option(value="2") Two
+                                    option(value="3") Three
+                                div(class="triangle-topright-red ", style="position: absolute; top: 0; right: 0")
+                            div(class="form-floating my-3 btn-contact position-relative")
+                                textarea#location(style="height: 100px;border:none", class="shadow form-control rounded-0 btn-contact", placeholder="Enter your ",name="REQUEST"  required)
+                                label(for="location") REQUEST
+                                div(class="triangle-topright-red  ", style="position: absolute; top: 0; right: 0")
+                                div(class="invalid-feedback") A REQUEST is required.
+                            // Submit Button
+                            div(class="d-grid bg-red ")
+                                button(class="btn  rounded-0 send", type="submit" style="padding:16px 12px;")
+                                    | Send
+                    
+                div(class="col-lg-4 col-12")
+                    div(class="row pt-5 text_third")
+                        div(class="col-12  mb-5 mb-lg-0 d-flex flex-lg-row flex-column justify-content-center justify-content-lg-start  align-items-center align-items-lg-start  mb-4 text-center text-lg-start")
+                            div(class="w-25 text-center")
+                                img(src="../img/Group 130.png", alt="",width="30.82px", style="object-fit:cover;")
+                            div
+                                div(class="mt-2 fw-semibold land-icons" ) LOCATION
+                                div(class="flex-column d-flex mt-1 text_third fw-medium" ) Lorem ipsum dolor sit amet, consectetuer
+                        div(class="col-12 mt-2 mb-5 mb-lg-0 d-flex flex-lg-row flex-column justify-content-center justify-content-lg-start align-items-center align-items-lg-start   text-center text-lg-start")
+                            div(class="w-25 text-center")
+                                img(src="../img/Group 2.png", alt="",width="29.22px",  style="object-fit:cover;")
+                            div 
+
+                                div(class="fw-semibold land-icons") PHONE
+                                div(class="flex-column d-flex mt-1 text_third fw-medium")
+                                    a(class="text_third text-decoration-none", href="tel:++1 (555) 123-4567")
+                                        | +1 (555) 123-4567
+                                    a(class="text_third text-decoration-none", href="tel:+1 (555) 123-4567") +1 (555) 123-4567
+
+
+                        div(class="col-12 mt-2 mb-5 mb-lg-0 d-flex flex-lg-row flex-column justify-content-center justify-content-lg-start align-items-center align-items-lg-start   text-center text-lg-start")
+                            div(class="w-25 text-center")
+                                img(src="../img/Group 133.png", alt="",width="40.48px", style="object-fit:cover;")
+                            div
+                                div(class=" fw-semibold land-icons") EMAIL
+                                div(class="flex-column d-flex mt-1 text_third ")
+                                    a(class="text_third text-decoration-none", href="mailto:mail.upshare.com ")  mail.upshare.com 
+                                    a(class="text_third text-decoration-none",href="mailto:mail.upshareproperties.com") mail.upshareproperties.com
+                
+
+        include components/footer.pug
+        include components/side_contact.pug
+        script(src="../js/app.js")

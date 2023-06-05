@@ -1,4 +1,9 @@
 
+
+
+$(document).ready(function() {
+  $('#preloader').fadeOut('slow');
+});
 //swiper images 
 document.addEventListener("DOMContentLoaded", function() {
   const swiper1 = new Swiper(".swiper-photocards", {
@@ -91,10 +96,14 @@ document.addEventListener("DOMContentLoaded", function() {
       },
     },
   });})
+
   const scroll_top = document.getElementById('scroll_top');
   scroll_top.addEventListener('click', () => {
     $('body,html').animate({scrollTop: 0}, 'fast');
   })
+
+
+
 //to pass the active class to the current page
   $(document).ready(function() {
     // Get the current URL
@@ -144,23 +153,33 @@ document.addEventListener("DOMContentLoaded", function() {
       // Append the .triangle-top class to the active nav link element
       activeNavLink.append('<span class="triangle-top position-absolute d-none d-lg-block" style="top:35px; right:45% " ></span>');
 
-//change the theme on scroll 
 
-
+      $(document).ready(function() {
+        // check the window width on page load
+        if ($(window).width() < 992) {
+          $('#offcanvasExample4').addClass('offcanvasExample offcanvas offcanvas-start');
+          $('#navbarSupportedContent').removeClass('nav-active');
+        } else {
+          $('#offcanvasExample4').removeClass('offcanvasExample offcanvas offcanvas-start');
+          $('#navbarSupportedContent').addClass('nav-active');
+        }
+      });
 
  $(window).scroll(function() {
-            let scrollDistance = $(window).scrollTop();
-            if (scrollDistance >= 500) {       
-              $('#scroll_top').removeClass('d-none');
-         } else {        
-                $('#scroll_top').addClass('d-none');     
-               }
-    if ([ '/index.html','/'].some(path => currentPath.endsWith(path))) {
+    let scrollDistance = $(window).scrollTop();
+    if (scrollDistance >= 500) {       
+      $('#scroll_top').removeClass('d-none');
+    } else {        
+        $('#scroll_top').addClass('d-none');     
+        }
 
 
-      // Show/hide menu on scroll
-        if (scrollDistance >= 500) {
+
+        if (['/contact2.html', '/index.html','/'].some(path => currentPath.endsWith(path))) {
+        if (scrollDistance >= 50) {
+
           $('.home_nav').addClass('navbar-scrolled');
+
           $('.changesrc').attr('src', '../img/Group 151.png'); // Change the image source to 'new-image.jpg'
           $('.log').removeClass('text_primary');
           $('.bi-list').removeClass('text_primary');
@@ -171,9 +190,11 @@ document.addEventListener("DOMContentLoaded", function() {
           $('.log').addClass('text_primary');
           $('.bi-list').addClass('text_primary');
 
-        }
+
         
-      }});});
+      }
+    }}
+    );});
    
 
 
@@ -189,11 +210,8 @@ if (check1 && check2 || option11 || option12) {
 
 
 option11.addEventListener('click', () => {
-
     check1.classList.add('activecheckbox');
     check2.classList.remove('activecheckbox');
-
-  
 });
 
 option12.addEventListener('click', () => {
@@ -209,13 +227,6 @@ option12.addEventListener('click', () => {
 
 
 
-// $(document).ready(function() {
-//   // When a button is clicked
-//   $('.collapsible-content').on('shown.bs.collapse', function() {
-//     // Hide all other collapsible content
-//     $('.collapsible-content').not(this).collapse('hide');
-//   });
-// });
 
 $(document).ready(function() {
   // When a button is clicked
