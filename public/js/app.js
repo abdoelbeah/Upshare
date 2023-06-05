@@ -124,14 +124,27 @@ document.addEventListener("DOMContentLoaded", function() {
 //to change the theme for footer and nav depend on page
 
 
-    if (!['/contact2.html', '/index.html','/'].some(path => currentPath.endsWith(path))) { // Check if the current page is not the home page or the contact page
-      $('.home_nav').addClass('navbar-scrolled');
-      $('.changesrc').attr('src', '../img/Group 151.png'); // Change the image source to 'new-image.jpg'
-      $('.log').removeClass('text_primary');
-      $('.bi-list').removeClass('text_primary');
+    if (['/contact2.html', '/index.html','/'].some(path => currentPath.endsWith(path))) { 
+      $('.home_nav').removeClass('color_nav');
+      $('.home_nav').addClass('colorless_nav');
+      $('.changesrc').attr('src', '../img/Group 11.png');
+      $('.log').addClass('text_primary');
+      $('.log').removeClass('text_third');
+      $('.bi-list').addClass('text_primary'); 
+      $('.bi-list').removeClass('text_third'); 
     }
 
-    if (!['/contact.html','/contact2.html','/index.html','/'].some(path => currentPath.endsWith(path))) { // Check if the current page is not the home page or the contact page
+    if (['/contact3.html'].some(path => currentPath.endsWith(path))) {
+      $('.home_nav').removeClass('color_nav');
+      $('.home_nav').addClass('colorless_nav');
+      $('.changesrc').attr('src', '../img/Group 111.png');
+      $('.log').addClass('text_primary');
+      $('.log').removeClass('text_third');
+      $('.bi-list').addClass('text_primary'); 
+      $('.bi-list').removeClass('text_third'); 
+    }
+
+    if (!['/contact.html','/contact2.html','/index.html','/'].some(path => currentPath.endsWith(path))) { 
 
     $('footer').addClass('section-colors_primary ')
 
@@ -176,24 +189,58 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
         if (['/contact2.html', '/index.html','/'].some(path => currentPath.endsWith(path))) {
-        if (scrollDistance >= 50) {
+          if (scrollDistance >= 2) {
+            $('.home_nav').removeClass('colorless_nav');
+            $('.home_nav').addClass('navbar-scrolled ');
+            $('.changesrc').attr('src', '../img/Group 151.png'); 
+            $('.log').addClass('text_third');
+            $('.log').removeClass('text_primary');
+            $('.bi-list').addClass('text_third'); 
+            $('.bi-list').removeClass('text_primary'); 
+            } else {
+              $('.home_nav').removeClass('navbar-scrolled');
+              $('.home_nav').addClass('colorless_nav');
+              $('.changesrc').attr('src', '../img/Group 11.png');
+              $('.log').addClass('text_primary');
+              $('.log').removeClass('text_third');
+              $('.bi-list').addClass('text_primary'); 
+              $('.bi-list').removeClass('text_third'); 
+        }
+    };
+        if (['/contact3.html'].some(path => currentPath.endsWith(path))) {
+          if (scrollDistance >= 2) {
+            $('.home_nav').removeClass('colorless_nav');
+            $('.home_nav').addClass('navbar-scrolled ');
+            $('.changesrc').attr('src', '../img/Group 151.png'); 
+            $('.log').addClass('text_third');
+            $('.log').removeClass('text_primary');
+            $('.bi-list').addClass('text_third'); 
+            $('.bi-list').removeClass('text_primary'); 
+            } else {
+              $('.home_nav').removeClass('navbar-scrolled');
+              $('.home_nav').addClass('colorless_nav');
+              $('.changesrc').attr('src', '../img/Group 11.png');
+              $('.log').addClass('text_primary');
+              $('.log').removeClass('text_third');
+              $('.bi-list').addClass('text_primary'); 
+              $('.bi-list').removeClass('text_third'); 
+        }
+    }
+        if (!['/contact3.html','/contact2.html', '/index.html','/'].some(path => currentPath.endsWith(path))) {
+          if (scrollDistance >= 2) {
+            $('.home_nav').removeClass('colorless_nav');
+            $('.home_nav').addClass('navbar-scrolled ');
+            $('.changesrc').attr('src', '../img/Group 151.png');              
 
-          $('.home_nav').addClass('navbar-scrolled');
 
-          $('.changesrc').attr('src', '../img/Group 151.png'); // Change the image source to 'new-image.jpg'
-          $('.log').removeClass('text_primary');
-          $('.bi-list').removeClass('text_primary');
-
-          } else {
-          $('.home_nav').removeClass('navbar-scrolled');
-          $('.changesrc').attr('src', '../img/Group 11.png'); // Change the image source back to 'original-image.jpg'
-          $('.log').addClass('text_primary');
-          $('.bi-list').addClass('text_primary');
-
-
-        
-      }
-    }}
+            } else {
+              $('.home_nav').removeClass('navbar-scrolled');
+              $('.home_nav').addClass('colorless_nav');
+              $('.changesrc').attr('src', '../img/Group 151.png');
+ 
+        }
+    }
+  }
     );});
    
 

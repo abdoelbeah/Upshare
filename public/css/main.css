@@ -57,11 +57,9 @@ a:hover{
   padding-left:5.8%;
   }
   .container-project-y{
-  padding-top:7%;
+  padding-top:10%;
   }
-  .container-article-y{
-  padding-top: 7.3%;
-  }
+
 
 .offcanvasExample{
   color: #F0F7EE;
@@ -123,24 +121,28 @@ form-control:focus{
   color: #F0F7EE;
 }
 
-.nav-link{
+/* .nav-link{
   color: #F0F7EE;
 
-}
+} */
 .nav-link:hover{
   color: #87BBA2;
 
 }
 
-.navbar-scrolled .nav-link{
-  color: #0E3840 ;
-}
+
+
+
 .offcanvasExample .nav-link{
-  color: #F0F7EE ;
+  color: #F0F7EE !important;
 }
 .offcanvasExample .log{
   color: #F0F7EE ;
 }
+
+
+
+
 .navbar-scrolled .active{
   color: #87BBA2 !important;
 }
@@ -149,6 +151,18 @@ form-control:focus{
   color: #0E3840 !important;
   transition: background-color 0.3s ease-in-out;
 }
+
+.colorless_nav .nav-link{
+  color: #F0F7EE ;
+}
+.color_nav .nav-link{
+  color: #0E3840 ;
+}
+.navbar-scrolled .nav-link{
+  color: #0E3840 ;
+}
+
+
 .btn-reset {
   color: initial;
 }
@@ -551,9 +565,9 @@ background-color:#FFFFFF;
   width: 100%;
 }
 .icon_size{
-  width: calc(4vh + 2.2rem) ;
-  height: calc(4vh + 2.2rem)  ;
-  font-size:calc(2vh + 1.1rem) ;
+  width: calc(3vh + 2.2rem) ;
+  height: calc(3vh + 2.2rem)  ;
+  font-size:calc(1.5vh + 1.1rem) ;
 }
 .form_padding{
   padding:60px 30px ;
@@ -569,6 +583,10 @@ background-color:#FFFFFF;
   color: #0E3840;
   font-size: 25px;
   }
+  .offcanvasExample {
+    width: 320px !important; 
+  }
+
 @media screen and  (max-width: 651px)  {
   .btn-contact{
     background-color: transparent;
@@ -680,14 +698,8 @@ background-color:#FFFFFF;
   
 }
 
-.offcanvasExample {
 
 
-  width: 320px !important; 
-
-
-
-}
 
 @media screen and  (min-width: 1400px)  {
 body {
