@@ -1,0 +1,14 @@
+service worker caches files  that ends with   /.*\.(?:js|css|png|jpg|jpeg|svg|webp|woff2?|ttf|otf|eot|ico|gif)/, and that includes javascript files and css files all type of images and all type of fonts
+
+
+1-manifest file and sw file need to be in the last scope of the project so it will access all files that need to be cached
+2-pwajs file  needs  to be called in all html pages     <script src="../js/pwajs.js" type="module"> </script>
+3-manifest file needs to be called in all html pages in the head section     <link rel="manifest" href="../manifest.json">
+4-you need to change the next from the files so it works well 
+   a- the manifest file :  1- the information about the app like name, short_name , description and icons_url should change to match the application 
+		  2-  the start_url is the path that the downloaded app will open at also change to match
+		  3- dispaly stay the same 
+		  4- change theme color and backgroundcolor to suit the app
+  b- sw file : 1- url
+  c- pwajs :	 2- the url of sw 	  
+      
